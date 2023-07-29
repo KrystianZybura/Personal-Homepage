@@ -1,6 +1,7 @@
 # Krystina Żybura - Personal Homepage
 
 This project is destined to become a quick preview of my current programming skills, interests and more 😎
+
 I'll provide further information soon.
 
 ## Demo:
