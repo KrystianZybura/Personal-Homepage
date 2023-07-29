@@ -14,6 +14,8 @@ const GlobalStyles = createGlobalStyle`${css`
   body {
     font-family: "Inter", sans-serif;
     background: ${({ theme }) => theme.background};
+    margin: 0 auto;
+    max-width: 1200px;
   }
 `}`;
 
