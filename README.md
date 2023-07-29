@@ -1,6 +1,7 @@
 # Krystina Żybura - Personal Homepage
 
-Quite simple task list, made as a part of my homework in my programming course - Youcode 🥰
+This project is destined to become a quick preview of my current programming skills, interests and more 😎
+I'll provide further information soon.
 
 ## Demo:
 
