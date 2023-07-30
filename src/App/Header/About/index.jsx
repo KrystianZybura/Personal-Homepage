@@ -1,15 +1,27 @@
-import { Description, Image, Introduction, Title } from "./styled";
+import {
+  Container,
+  Description,
+  HireEmail,
+  Image,
+  Introduction,
+  Title,
+} from "./styled";
 
 const About = ({ name }) => (
   <>
     <Image src="/image.png" alt={name} />
-    <div>
+    <Container>
       <Introduction>THIS IS</Introduction>
       <Title>{name}</Title>
       <Description>
-        I am a passionate Frontend Developer, looking for new job opportunities.
+        👌💻 I am a passionate Frontend Developer in love with react, looking
+        for new job opportunities.
       </Description>
-    </div>
+      <HireEmail href="mailto:zybura.dev@gmail.com">
+        <img src="/message.svg" alt="message icon" />
+        Hire Me
+      </HireEmail>
+    </Container>
   </>
 );
 
