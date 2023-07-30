@@ -20,11 +20,13 @@ const Title = styled.h1`
   font-size: 38px;
   color: #000;
   margin: 12px 0 35px;
+  font-weight: 900;
 `;
 
 const Description = styled.p`
   font-size: 20px;
   margin-bottom: 32px;
+  line-height: 28px;
 `;
 
 const HireEmail = styled.a`
