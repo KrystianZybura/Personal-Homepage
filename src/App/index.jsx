@@ -1,9 +1,10 @@
 import Header from "./Header";
+import About from "./Header/About";
 
 function App() {
   return (
     <>
-      <Header title={"Krystian Żybura"} />
+      <Header about={<About name={"Krystian Żybura"} />} />
     </>
   );
 }
