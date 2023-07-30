@@ -14,8 +14,8 @@ const About = ({ name }) => (
       <Introduction>THIS IS</Introduction>
       <Title>{name}</Title>
       <Description>
-        👌💻 I am a passionate Frontend Developer in love with react, looking
-        for new job opportunities.
+        👌💻 I am a passionate Frontend Developer in love with react, currently
+        looking for new job opportunities.
       </Description>
       <HireEmail href="mailto:zybura.dev@gmail.com">
         <img src="/message.svg" alt="message icon" />
