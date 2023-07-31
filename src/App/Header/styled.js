@@ -5,8 +5,7 @@ const StyledHeader = styled.div`
   grid-gap: 66px;
   grid-template-columns: auto 1fr;
   margin-top: 119px;
-  justify-content: center;
-  align-items: center;
+  place-items: center;
   color: ${({ theme }) => theme.font};
 `;
 
