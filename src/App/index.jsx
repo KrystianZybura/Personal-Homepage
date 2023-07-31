@@ -1,6 +1,6 @@
 import Header from "./Header";
 import About from "./Header/About";
-import ToggleTheme from "./Header/ToggleTheme/styled";
+import ToggleTheme from "./Header/ToggleTheme";
 
 function App() {
   return (
