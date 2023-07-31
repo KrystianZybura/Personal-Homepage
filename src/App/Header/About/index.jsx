@@ -5,7 +5,7 @@ const About = ({ name }) => (
   <>
     <Image src="/image.png" alt={name} />
     <Container>
-        <SpecialText>This is</SpecialText>
+      <SpecialText>This is</SpecialText>
       <Title>{name}</Title>
       <Description>
         👌💻 I am a passionate Frontend Developer in love with react, currently
