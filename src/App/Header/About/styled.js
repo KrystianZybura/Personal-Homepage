@@ -11,11 +11,6 @@ const Image = styled.img`
   aspect-ratio: 1;
 `;
 
-const Introduction = styled.span`
-  font-weight: 700;
-  font-size: 12px;
-`;
-
 const Title = styled.h1`
   font-size: 38px;
   color: #000;
@@ -45,4 +40,4 @@ const HireEmail = styled.a`
   font-weight: 600;
 `;
 
-export { Introduction, HireEmail, Image, Description, Title, Container };
+export { HireEmail, Image, Description, Title, Container };

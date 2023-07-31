@@ -1,17 +1,11 @@
-import {
-  Container,
-  Description,
-  HireEmail,
-  Image,
-  Introduction,
-  Title,
-} from "./styled";
+import { SpecialText } from "../../common/SpecialText";
+import { Container, Description, HireEmail, Image, Title } from "./styled";
 
 const About = ({ name }) => (
   <>
     <Image src="/image.png" alt={name} />
     <Container>
-      <Introduction>THIS IS</Introduction>
+        <SpecialText>This is</SpecialText>
       <Title>{name}</Title>
       <Description>
         👌💻 I am a passionate Frontend Developer in love with react, currently

@@ -15,8 +15,4 @@ const ToggleThemeButton = styled.button`
   background: transparent;
 `;
 
-const DarkThemeStatus = styled.span`
-  text-transform: uppercase;
-`;
-
-export { ToggleThemeButton, DarkThemeStatus, ToggleThemeContainer };
+export { ToggleThemeButton, ToggleThemeContainer };
