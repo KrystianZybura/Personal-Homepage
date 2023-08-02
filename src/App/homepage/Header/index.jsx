@@ -1,8 +1,8 @@
 import { StyledHeader } from "./styled";
 
-const Header = ({ about, toggleTheme }) => (
+const Header = ({ hero, toggleTheme }) => (
   <StyledHeader>
-    {about}
+    {hero}
     {toggleTheme}
   </StyledHeader>
 );

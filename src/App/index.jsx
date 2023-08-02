@@ -1,12 +1,12 @@
-import Header from "./Header";
-import About from "./Header/About";
-import ToggleTheme from "./Header/ToggleTheme";
+import Header from "./homepage/Header";
+import Hero from "./homepage/Header/Hero";
+import ToggleTheme from "./homepage/Header/ToggleTheme";
 
 function App() {
   return (
     <>
       <Header
-        about={<About name={"Krystian Żybura"} />}
+        hero={<Hero name={"Krystian Żybura"} />}
         toggleTheme={<ToggleTheme />}
       />
     </>

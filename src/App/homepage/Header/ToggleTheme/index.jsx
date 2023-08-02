@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { SpecialText } from "../../common/SpecialText";
+import { SpecialText } from "../../../common/SpecialText";
 import { ToggleThemeButton, ToggleThemeContainer } from "./styled";
 
 const ToggleTheme = () => {

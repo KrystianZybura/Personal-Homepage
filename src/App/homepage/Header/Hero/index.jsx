@@ -1,7 +1,7 @@
-import { SpecialText } from "../../common/SpecialText";
+import { SpecialText } from "../../../common/SpecialText";
 import { Container, Description, HireEmail, Image, Title } from "./styled";
 
-const About = ({ name }) => (
+const Hero = ({ name }) => (
   <>
     <Image src="/image.png" alt={name} />
     <Container>
@@ -19,4 +19,4 @@ const About = ({ name }) => (
   </>
 );
 
-export default About;
+export default Hero;
