@@ -9,4 +9,8 @@ const SectionHeader = styled.h2`
   font-weight: 900;
 `;
 
-export { StyledSection, SectionHeader };
+const SectionContainer = styled.div`
+  background: #fff;
+`;
+
+export { StyledSection, SectionHeader, SectionContainer };
