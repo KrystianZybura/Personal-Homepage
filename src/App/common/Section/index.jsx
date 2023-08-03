@@ -1,10 +1,8 @@
 import { SectionHeader, StyledSection } from "./styled";
 
-const Section = ({ title, emote }) => (
+const Section = ({ title }) => (
   <StyledSection>
-    <SectionHeader>
-      {title} {emote}
-    </SectionHeader>
+    <SectionHeader>{title}</SectionHeader>
   </StyledSection>
 );
 
