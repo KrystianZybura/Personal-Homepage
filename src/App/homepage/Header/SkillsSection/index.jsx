@@ -1,5 +1,5 @@
 import Section from "../../../common/Section";
-import skills from "./skills.json";
+import { skills } from "./skills";
 
 const SkillsSection = () => (
   <Section title={"My skillset includes 🛠"} body={skills} />

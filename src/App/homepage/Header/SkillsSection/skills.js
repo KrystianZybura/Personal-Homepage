@@ -1,4 +1,4 @@
-[
+const skills = [
   "HTML",
   "CSS",
   "JavaScript (ES6 + Features)",
@@ -19,5 +19,7 @@
   "React Route",
   "Generator functions",
   "Async functions",
-  "Axios"
-]
+  "Axios",
+];
+
+export { skills };
