@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 const StyledSection = styled.section`
-  background: ${({ theme }) => theme.sectionBackround};
+  background: ${({ theme }) => theme.sectionBackground};
 `;
 
 const SectionHeader = styled.h2`
@@ -11,8 +11,6 @@ const SectionHeader = styled.h2`
   border-bottom: 1px solid grey;
 `;
 
-const SectionContainer = styled.div`
-  background: #fff;
-`;
+const SectionContainer = styled.div``;
 
 export { StyledSection, SectionHeader, SectionContainer };
