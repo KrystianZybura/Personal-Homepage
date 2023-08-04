@@ -1,4 +1,4 @@
-import Section from "../../../common/Section";
+import Section from "../../common/Section";
 import { skills } from "./skills";
 
 const SkillsSection = () => (
