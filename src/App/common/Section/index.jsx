@@ -1,14 +1,20 @@
-import { SectionContainer, SectionHeader, StyledSection } from "./styled";
+import {
+  SectionContainer,
+  SectionHeader,
+  SectionLi,
+  SectionUl,
+  StyledSection,
+} from "./styled";
 
 const Section = ({ title, body }) => (
   <StyledSection>
     <SectionHeader>{title}</SectionHeader>
     <SectionContainer>
-      <ul>
+      <SectionUl>
         {body.map((skill) => (
-          <li key={skill}>{skill}</li>
+          <SectionLi key={skill}>{skill}</SectionLi>
         ))}
-      </ul>
+      </SectionUl>
     </SectionContainer>
   </StyledSection>
 );
