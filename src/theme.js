@@ -4,6 +4,7 @@ const theme = {
     font: "#6E7E91",
     primary: "#0366D6",
     sectionBackground: "#FFFFFF",
+    border: "#D1D5DA4D",
   },
   dark: {
     background: "#252525",

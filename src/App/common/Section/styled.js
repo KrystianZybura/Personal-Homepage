@@ -10,7 +10,7 @@ const SectionHeader = styled.h2`
   font-size: 30px;
   font-weight: 900;
   padding-bottom: 15px;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid ${({ theme }) => theme.border};
 `;
 
 const SectionContainer = styled.div`
