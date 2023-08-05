@@ -1,5 +1,5 @@
 import { SpecialText } from "../../../common/SpecialText";
-import { Container, Description, HireEmail, Image, Title } from "./styled";
+import { About, Container, HireEmail, Image, Title } from "./styled";
 
 const Hero = ({ name }) => (
   <>
@@ -7,10 +7,10 @@ const Hero = ({ name }) => (
     <Container>
       <SpecialText>This is</SpecialText>
       <Title>{name}</Title>
-      <Description>
+      <About>
         👌💻 I am a passionate Frontend Developer in love with react, currently
         looking for new job opportunities.
-      </Description>
+      </About>
       <HireEmail href="mailto:zybura.dev@gmail.com">
         <img src="/message.svg" alt="message icon" />
         Hire Me

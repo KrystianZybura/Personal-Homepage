@@ -18,7 +18,7 @@ const Title = styled.h1`
   font-weight: 900;
 `;
 
-const Description = styled.p`
+const About = styled.p`
   font-size: 20px;
   margin-bottom: 32px;
   line-height: 28px;
@@ -40,4 +40,4 @@ const HireEmail = styled.a`
   font-weight: 600;
 `;
 
-export { HireEmail, Image, Description, Title, Container };
+export { HireEmail, Image, About, Title, Container };
