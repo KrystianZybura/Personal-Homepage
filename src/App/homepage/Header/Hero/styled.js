@@ -5,8 +5,8 @@ const Container = styled.div`
 `;
 
 const Image = styled.img`
-  width: 398px;
-  height: 398px;
+  width: 384px;
+  height: 384px;
   border-radius: 50%;
   aspect-ratio: 1;
 `;
