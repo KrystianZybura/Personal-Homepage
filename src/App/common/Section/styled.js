@@ -4,6 +4,7 @@ const StyledSection = styled.section`
   background: ${({ theme }) => theme.sectionBackground};
   box-shadow: 0px -2px 50px 0px #090a3305;
   padding: 33px;
+  margin-top: 73px;
 `;
 
 const SectionHeader = styled.h2`
@@ -20,6 +21,8 @@ const SectionContainer = styled.div`
 
 const SectionUl = styled.ul`
   list-style-image: url("ellipse.svg");
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 `;
 
 const SectionLi = styled.li`
