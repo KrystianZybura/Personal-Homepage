@@ -2,6 +2,8 @@ import { styled } from "styled-components";
 
 const StyledSection = styled.section`
   background: ${({ theme }) => theme.sectionBackground};
+  box-shadow: 0px -2px 50px 0px #090a3305;
+  padding: 33px;
 `;
 
 const SectionHeader = styled.h2`
