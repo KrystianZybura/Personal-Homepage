@@ -1,7 +1,7 @@
 import Header from "./homepage/Header";
 import Hero from "./homepage/Header/Hero";
 import ToggleTheme from "./homepage/Header/ToggleTheme";
-import SkillsSection from "./homepage/SkillsSection";
+import Skillset from "./homepage/Skillset";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         hero={<Hero name={"Krystian Żybura"} />}
         toggleTheme={<ToggleTheme />}
       />
-      <SkillsSection />
+      <Skillset />
     </>
   );
 }
