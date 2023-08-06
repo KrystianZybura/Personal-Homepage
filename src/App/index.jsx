@@ -1,3 +1,4 @@
+import FutureDevelopment from "./homepage/FutureDevelopment";
 import Header from "./homepage/Header";
 import Hero from "./homepage/Header/Hero";
 import ToggleTheme from "./homepage/Header/ToggleTheme";
@@ -11,6 +12,7 @@ function App() {
         toggleTheme={<ToggleTheme />}
       />
       <Skillset />
+      <FutureDevelopment />
     </>
   );
 }
