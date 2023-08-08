@@ -3,7 +3,7 @@ import { About, Container, HireEmail, Image, Title } from "./styled";
 
 const Hero = ({ name }) => (
   <>
-    <Image src="/image.png" alt={name} />
+    <Image src="/image.png" alt={`Photo of ${name}`} />
     <Container>
       <SpecialText>This is</SpecialText>
       <Title>{name}</Title>
