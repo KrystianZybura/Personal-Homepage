@@ -1,6 +1,8 @@
+import { ReactComponent as Logo } from "./github-logo.svg";
 import {
   PortfolioContainer,
   PortfolioHeader,
+  PortfolioLogo,
   PortfolioSubTitle,
   PortfolioTitle,
 } from "./styled";
@@ -8,7 +10,9 @@ import {
 const Portfolio = () => (
   <>
     <PortfolioHeader>
-      <img src="github-logo.svg" alt="Github logo" />
+      <PortfolioLogo>
+        <Logo />
+      </PortfolioLogo>
       <PortfolioTitle>Portfolio</PortfolioTitle>
       <PortfolioSubTitle>My recent projects</PortfolioSubTitle>
     </PortfolioHeader>

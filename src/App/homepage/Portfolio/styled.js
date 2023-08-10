@@ -6,6 +6,12 @@ const PortfolioHeader = styled.div`
   margin-top: 72px;
 `;
 
+const PortfolioLogo = styled.div`
+  &:hover {
+    color: ${({ theme }) => theme.primary};
+  }
+`;
+
 const PortfolioTitle = styled.h2`
   font-size: 30px;
   font-weight: 900;
@@ -24,6 +30,7 @@ const PortfolioContainer = styled.div`
 export {
   PortfolioContainer,
   PortfolioHeader,
+  PortfolioLogo,
   PortfolioTitle,
   PortfolioSubTitle,
 };
