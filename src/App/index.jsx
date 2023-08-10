@@ -2,7 +2,7 @@ import FutureDevelopment from "./homepage/FutureDevelopment";
 import Header from "./homepage/Header";
 import Hero from "./homepage/Header/Hero";
 import ToggleTheme from "./homepage/Header/ToggleTheme";
-import Repositories from "./homepage/Repositories";
+import Portfolio from "./homepage/Portfolio";
 import Skillset from "./homepage/Skillset";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       />
       <Skillset />
       <FutureDevelopment />
-      <Repositories />
+      <Portfolio />
     </>
   );
 }

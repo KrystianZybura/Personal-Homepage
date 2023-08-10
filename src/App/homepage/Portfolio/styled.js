@@ -1,29 +1,29 @@
 import { styled } from "styled-components";
 
-const RepositoriesHeader = styled.div`
+const PortfolioHeader = styled.div`
   display: grid;
   place-items: center;
   margin-top: 72px;
 `;
 
-const RepositoriesTitle = styled.h2`
+const PortfolioTitle = styled.h2`
   font-size: 30px;
   font-weight: 900;
 `;
 
-const RepositoriesSubTitle = styled.span`
+const PortfolioSubTitle = styled.span`
   font-size: 20px;
 `;
 
-const RepositoriesContainer = styled.div`
+const PortfolioContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 32px;
 `;
 
 export {
-  RepositoriesContainer,
-  RepositoriesHeader,
-  RepositoriesTitle,
-  RepositoriesSubTitle,
+  PortfolioContainer,
+  PortfolioHeader,
+  PortfolioTitle,
+  PortfolioSubTitle,
 };
