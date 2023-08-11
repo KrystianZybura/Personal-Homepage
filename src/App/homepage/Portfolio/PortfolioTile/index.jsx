@@ -2,12 +2,12 @@ import { Tile, TileTitle } from "./styled";
 import { useReposData } from "./useReposData";
 
 const PortfolioTile = () => {
-  const repoData = useReposData();
-  console.log(repoData.name);
+  const reposData = useReposData();
+  console.log(reposData);
 
   return (
     <Tile>
-      <TileTitle>{repoData.name}</TileTitle>
+      <TileTitle>{reposData.name}</TileTitle>
     </Tile>
   );
 };
