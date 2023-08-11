@@ -1,4 +1,5 @@
 import { ReactComponent as Logo } from "../../assets/github-logo.svg";
+import PortfolioTile from "./PortfolioTile";
 import {
   PortfolioContainer,
   PortfolioHeader,
@@ -6,10 +7,8 @@ import {
   PortfolioSubTitle,
   PortfolioTitle,
 } from "./styled";
-import { useReposData } from "./useReposData";
 
 const Portfolio = () => {
-  const repoName = useReposData();
   return (
     <>
       <PortfolioHeader>
@@ -19,7 +18,9 @@ const Portfolio = () => {
         <PortfolioTitle>Portfolio</PortfolioTitle>
         <PortfolioSubTitle>My recent projects</PortfolioSubTitle>
       </PortfolioHeader>
-      <PortfolioContainer>{repoName}</PortfolioContainer>
+      <PortfolioContainer>
+        <PortfolioTile />
+      </PortfolioContainer>
     </>
   );
 };
