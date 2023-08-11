@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { ReactComponent as DarkThemeIcon } from "../../../assets/dark.svg";
+import { ReactComponent as LightThemeIcon } from "../../../assets/light.svg";
 import { SpecialText } from "../../../common/SpecialText";
 import { ToggleThemeButton, ToggleThemeContainer } from "./styled";
 
@@ -12,10 +14,7 @@ const ToggleTheme = () => {
       <ToggleThemeButton
         onClick={() => setDarkTheme((darkTheme) => !darkTheme)}
       >
-        <img
-          src={`/${darkTheme ? "dark" : "light"}.svg`}
-          alt="toggle theme button"
-        />
+        {darkTheme ? <DarkThemeIcon /> : <LightThemeIcon />}
       </ToggleThemeButton>
     </ToggleThemeContainer>
   );

@@ -1,9 +1,10 @@
+import { ReactComponent as MessageIcon } from "../../../assets/message.svg";
 import { SpecialText } from "../../../common/SpecialText";
 import { About, Container, HireEmail, Image, Title } from "./styled";
 
 const Hero = ({ name }) => (
   <>
-    <Image src="/image.png" alt={`Photo of ${name}`} />
+    <Image src="src/App/assets/image.png" alt={`Photo of ${name}`} />
     <Container>
       <SpecialText>This is</SpecialText>
       <Title>{name}</Title>
@@ -12,7 +13,7 @@ const Hero = ({ name }) => (
         looking for new job opportunities.
       </About>
       <HireEmail href="mailto:zybura.dev@gmail.com">
-        <img src="/message.svg" alt="message icon" />
+        <MessageIcon />
         Hire Me
       </HireEmail>
     </Container>

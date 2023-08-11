@@ -20,7 +20,7 @@ const SectionContainer = styled.div`
 `;
 
 const SectionUl = styled.ul`
-  list-style-image: url("ellipse.svg");
+  list-style-image: url("src/App/assets/ellipse.svg");
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 `;

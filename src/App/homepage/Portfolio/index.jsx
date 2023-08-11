@@ -1,4 +1,4 @@
-import { ReactComponent as Logo } from "./github-logo.svg";
+import { ReactComponent as Logo } from "../../assets/github-logo.svg";
 import {
   PortfolioContainer,
   PortfolioHeader,
