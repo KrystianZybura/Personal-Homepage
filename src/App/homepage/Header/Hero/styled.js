@@ -38,6 +38,10 @@ const HireEmail = styled.a`
   font-size: 20px;
   border-radius: 5px;
   font-weight: 600;
+
+  &:hover {
+    box-shadow: 0px 0px 0px 2px #8cc2ff;
+  }
 `;
 
 export { HireEmail, Image, About, Title, Container };
