@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 const useReposData = () => {
-  const [reposData, setReposData] = useState({});
+  const [reposData, setReposData] = useState([]);
 
   useEffect(() => {
     (async () => {
