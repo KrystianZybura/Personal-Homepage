@@ -3,12 +3,15 @@ import { useReposData } from "./useReposData";
 
 const PortfolioTile = () => {
   const reposData = useReposData();
-  console.log(reposData);
 
   return (
-    <Tile>
-      <TileTitle>{reposData.name}</TileTitle>
-    </Tile>
+    <>
+      {reposData.map(({ name }) => (
+        <Tile key={name}>
+          <TileTitle key={name}>{name}</TileTitle>
+        </Tile>
+      ))}
+    </>
   );
 };
 
