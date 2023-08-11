@@ -2,19 +2,21 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 const useReposData = () => {
-  const [repoName, setRepoName] = useState();
+  const [repoData, setRepoData] = useState({});
 
   useEffect(() => {
     (async () => {
       const response = await axios.get(
         `https://api.github.com/repos/krystianzybura/todo-list-react`,
       );
-
-      setRepoName(await response.data.name);
+      const { name, description } = await response.data;
+      setTimeout(() => {
+        setRepoData({ name, description });
+      }, 1000);
     })();
   }, []);
 
-  return repoName;
+  return repoData;
 };
 
 export { useReposData };
