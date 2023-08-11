@@ -5,8 +5,13 @@ const Tile = styled.div`
   max-height: 322px;
   background: white;
   border: 6px solid #d1d5da4d;
+  border-radius: 4px;
   padding: 30px;
   box-shadow: 0px -2px 50px 0px #090a3305;
+
+  &:hover {
+    border-color: ${({ theme }) => theme.primary};
+  }
 `;
 
 const TileTitle = styled.h3`
