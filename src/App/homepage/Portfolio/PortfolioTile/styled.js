@@ -15,4 +15,10 @@ const TileTitle = styled.h3`
   color: ${({ theme }) => theme.primary};
 `;
 
-export { Tile, TileTitle };
+const TileDescription = styled.div`
+  max-width: 480px;
+  font-size: 18px;
+  color: ${({ theme }) => theme.font};
+`;
+
+export { Tile, TileTitle, TileDescription };
