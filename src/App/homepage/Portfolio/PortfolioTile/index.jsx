@@ -1,8 +1,9 @@
 import {
+  LinkContainer,
+  LinkDescription,
   Tile,
   TileDescription,
   TileLink,
-  TileLinks,
   TileTitle,
 } from "./styled";
 import { useReposData } from "./useReposData";
@@ -17,14 +18,16 @@ const PortfolioTile = () => {
         <Tile key={name}>
           <TileTitle>{name}</TileTitle>
           <TileDescription>{description}</TileDescription>
-          <TileLinks>
+          <LinkContainer>
+            <LinkDescription>Demo:</LinkDescription>
             <TileLink rel="no-referrer" target="_blank" href={html_url}>
               https://link.demo.com
             </TileLink>
+            <LinkDescription>Code:</LinkDescription>
             <TileLink rel="no-referrer" target="_blank" href={svn_url}>
               https://link.code.com
             </TileLink>
-          </TileLinks>
+          </LinkContainer>
         </Tile>
       ))}
     </>
