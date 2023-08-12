@@ -36,7 +36,7 @@ const TileLink = styled.a`
 
 const LinkContainer = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto 1fr;
   gap: 8px;
 `;
 

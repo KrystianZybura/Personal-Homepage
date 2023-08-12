@@ -3,18 +3,19 @@ import { styled } from "styled-components";
 const PortfolioHeader = styled.div`
   display: grid;
   place-items: center;
-  margin-top: 72px;
+  margin: 72px 0 0 0;
+  grid-gap: 8px;
 `;
 
 const PortfolioLogo = styled.div`
-  &:hover {
-    color: ${({ theme }) => theme.primary};
-  }
+  color: ${({ theme }) => theme.primary};
+  margin-bottom: 4px;
 `;
 
 const PortfolioTitle = styled.h2`
   font-size: 30px;
   font-weight: 900;
+  margin: 0;
 `;
 
 const PortfolioSubTitle = styled.span`
