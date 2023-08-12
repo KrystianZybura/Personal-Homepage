@@ -14,17 +14,17 @@ const PortfolioTile = () => {
 
   return (
     <>
-      {reposData.map(({ name, description, html_url, svn_url }) => (
+      {reposData.map(({ name, description, html_url, homepage }) => (
         <Tile key={name}>
           <TileTitle>{name}</TileTitle>
           <TileDescription>{description}</TileDescription>
           <LinkContainer>
             <LinkDescription>Demo:</LinkDescription>
-            <TileLink rel="no-referrer" target="_blank" href={html_url}>
+            <TileLink rel="no-referrer" target="_blank" href={homepage}>
               https://link.demo.com
             </TileLink>
             <LinkDescription>Code:</LinkDescription>
-            <TileLink rel="no-referrer" target="_blank" href={svn_url}>
+            <TileLink rel="no-referrer" target="_blank" href={html_url}>
               https://link.code.com
             </TileLink>
           </LinkContainer>
