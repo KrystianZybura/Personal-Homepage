@@ -1,3 +1,4 @@
+import Footer from "./homepage/Footer";
 import FutureDevelopment from "./homepage/FutureDevelopment";
 import Header from "./homepage/Header";
 import Hero from "./homepage/Header/Hero";
@@ -15,6 +16,7 @@ function App() {
       <Skillset />
       <FutureDevelopment />
       <Portfolio />
+      <Footer />
     </>
   );
 }
