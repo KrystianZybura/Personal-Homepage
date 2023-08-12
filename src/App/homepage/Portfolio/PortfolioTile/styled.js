@@ -26,4 +26,15 @@ const TileDescription = styled.div`
   color: ${({ theme }) => theme.font};
 `;
 
-export { Tile, TileTitle, TileDescription };
+const TileLinks = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 8px;
+`;
+
+const TileLink = styled.a`
+  font-size: 18px;
+  color: ${({ theme }) => theme.primary};
+`;
+
+export { Tile, TileTitle, TileDescription, TileLink, TileLinks };
