@@ -25,12 +25,10 @@ const TileTitle = styled.h3`
 
 const TileDescription = styled.div`
   max-width: 480px;
-  font-size: 18px;
   color: ${({ theme }) => theme.font};
 `;
 
 const TileLink = styled.a`
-  font-size: 18px;
   color: ${({ theme }) => theme.primary};
 `;
 
@@ -42,7 +40,6 @@ const LinkContainer = styled.div`
 
 const LinkDescription = styled.span`
   color: ${({ theme }) => theme.font};
-  font-size: 18px;
 `;
 
 export {

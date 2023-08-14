@@ -13,7 +13,6 @@ const FooterTitle = styled.span`
 `;
 
 const FooterDescription = styled.p`
-  font-size: 18px;
   max-width: 670px;
 `;
 

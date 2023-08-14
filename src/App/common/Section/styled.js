@@ -16,7 +16,6 @@ const SectionHeader = styled.h2`
 
 const SectionContainer = styled.div`
   color: ${({ theme }) => theme.font};
-  font-size: 18px;
 `;
 
 const SectionUl = styled.ul`
