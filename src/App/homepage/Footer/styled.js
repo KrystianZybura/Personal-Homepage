@@ -7,7 +7,7 @@ const StyledFooter = styled.footer`
   margin-top: 120px;
 `;
 
-const FooterTitle = styled.span`
+const FooterEmail = styled.span`
   font-size: 32px;
   font-weight: 900;
 `;
@@ -22,4 +22,4 @@ const FooterSocialIcons = styled.div`
   gap: 24px;
 `;
 
-export { StyledFooter, FooterTitle, FooterDescription, FooterSocialIcons };
+export { StyledFooter, FooterEmail, FooterDescription, FooterSocialIcons };
