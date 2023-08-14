@@ -5,7 +5,6 @@ const StyledHeader = styled.header`
   grid-template-columns: auto 1fr;
   margin-top: 119px;
   place-items: center;
-  color: ${({ theme }) => theme.font};
 `;
 
 export { StyledHeader };
