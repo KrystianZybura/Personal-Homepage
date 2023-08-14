@@ -40,7 +40,11 @@ const HireEmail = styled.a`
   font-weight: 600;
 
   &:hover {
-    box-shadow: 0px 0px 0px 2px #8cc2ff;
+    box-shadow:
+      -2px -2px 0px 0px ${({ theme }) => theme.buttonBoxShadow},
+      2px 2px 0px 0px ${({ theme }) => theme.buttonBoxShadow},
+      -2px 2px 0px 0px ${({ theme }) => theme.buttonBoxShadow},
+      2px -2px 0px 0px ${({ theme }) => theme.buttonBoxShadow};
   }
 `;
 
