@@ -10,6 +10,10 @@ const StyledFooter = styled.footer`
 const FooterEmail = styled.span`
   font-size: 32px;
   font-weight: 900;
+
+  &:hover {
+    color: ${({ theme }) => theme.primary};
+  }
 `;
 
 const FooterDescription = styled.p`
