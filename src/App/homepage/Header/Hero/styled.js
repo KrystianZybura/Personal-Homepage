@@ -37,6 +37,7 @@ const HireEmail = styled.a`
   align-items: center;
   gap: 16px;
   font-size: 20px;
+  border: 1px solid ${({ theme }) => theme.border};
   border-radius: 5px;
   font-weight: 600;
 
