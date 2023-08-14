@@ -2,7 +2,9 @@ import { styled } from "styled-components";
 
 const StyledSection = styled.section`
   background: ${({ theme }) => theme.sectionBackground};
-  box-shadow: 0px 16px 58px 0px #090a3308;
+  box-shadow:
+    0px 16px 58px 0px ${({ theme }) => theme.firstBoxShadow},
+    0px -2px 50px 0px ${({ theme }) => theme.secondBoxShadow};
   padding: 33px;
   margin-top: 73px;
 `;
@@ -16,7 +18,6 @@ const SectionHeader = styled.h2`
 
 const SectionContainer = styled.div`
   color: ${({ theme }) => theme.font};
-  font-size: 18px;
 `;
 
 const SectionUl = styled.ul`

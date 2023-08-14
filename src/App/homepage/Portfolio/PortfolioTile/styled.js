@@ -4,15 +4,17 @@ const Tile = styled.div`
   max-width: 592px;
   max-height: 322px;
   background: white;
-  border: 6px solid #d1d5da4d;
+  border: 6px solid ${({ theme }) => theme.border};
   border-radius: 4px;
   padding: 30px;
-  box-shadow: 0px -2px 50px 0px #090a3305;
+  box-shadow:
+    0px 16px 58px 0px ${({ theme }) => theme.firstBoxShadow},
+    0px -2px 50px 0px ${({ theme }) => theme.secondBoxShadow};
   display: grid;
   grid-gap: 24px;
 
   &:hover {
-    border-color: ${({ theme }) => theme.primary};
+    border-color: ${({ theme }) => theme.borderHover};
   }
 `;
 
@@ -25,12 +27,10 @@ const TileTitle = styled.h3`
 
 const TileDescription = styled.div`
   max-width: 480px;
-  font-size: 18px;
   color: ${({ theme }) => theme.font};
 `;
 
 const TileLink = styled.a`
-  font-size: 18px;
   color: ${({ theme }) => theme.primary};
 `;
 
@@ -42,7 +42,6 @@ const LinkContainer = styled.div`
 
 const LinkDescription = styled.span`
   color: ${({ theme }) => theme.font};
-  font-size: 18px;
 `;
 
 export {

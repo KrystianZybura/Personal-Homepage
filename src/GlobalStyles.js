@@ -16,6 +16,7 @@ const GlobalStyles = createGlobalStyle`${css`
     background: ${({ theme }) => theme.background};
     margin: 0 auto;
     max-width: 1216px;
+    font-size: 18px;
   }
 `}`;
 
