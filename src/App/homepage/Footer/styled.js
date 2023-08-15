@@ -7,9 +7,13 @@ const StyledFooter = styled.footer`
   margin: 120px 0 109px;
 `;
 
-const FooterTitle = styled.span`
+const FooterEmail = styled.span`
   font-size: 32px;
   font-weight: 900;
+
+  &:hover {
+    color: ${({ theme }) => theme.primary};
+  }
 `;
 
 const FooterDescription = styled.p`
@@ -21,4 +25,4 @@ const FooterSocialIcons = styled.div`
   gap: 24px;
 `;
 
-export { StyledFooter, FooterTitle, FooterDescription, FooterSocialIcons };
+export { StyledFooter, FooterEmail, FooterDescription, FooterSocialIcons };

@@ -22,6 +22,7 @@ const About = styled.p`
   font-size: 20px;
   margin-bottom: 32px;
   line-height: 28px;
+  color: ${({ theme }) => theme.font};
 `;
 
 const HireEmail = styled.a`
@@ -36,6 +37,7 @@ const HireEmail = styled.a`
   align-items: center;
   gap: 16px;
   font-size: 20px;
+  border: 1px solid ${({ theme }) => theme.border};
   border-radius: 5px;
   font-weight: 600;
 
