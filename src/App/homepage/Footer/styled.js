@@ -4,7 +4,7 @@ const StyledFooter = styled.footer`
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 24px;
-  margin-top: 120px;
+  margin: 120px 0 109px;
 `;
 
 const FooterTitle = styled.span`
