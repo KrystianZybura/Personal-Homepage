@@ -6,6 +6,7 @@ import {
   FooterDescription,
   FooterEmail,
   FooterSocialIcons,
+  IconContainer,
   StyledFooter,
 } from "./styled";
 
@@ -17,9 +18,15 @@ const Footer = () => (
       {`I'm always open to new projects whenever I have the time. If you have a website, dashboard or mobile app in mind and need some help to make your ideas com to life, feel free to contact me ✌`}
     </FooterDescription>
     <FooterSocialIcons>
-      <Github />
-      <Facebook />
-      <LinkedIn />
+      <IconContainer>
+        <Github />
+      </IconContainer>
+      <IconContainer>
+        <Facebook />
+      </IconContainer>
+      <IconContainer>
+        <LinkedIn />
+      </IconContainer>
     </FooterSocialIcons>
   </StyledFooter>
 );

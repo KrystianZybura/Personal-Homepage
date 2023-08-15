@@ -25,4 +25,16 @@ const FooterSocialIcons = styled.div`
   gap: 24px;
 `;
 
-export { StyledFooter, FooterEmail, FooterDescription, FooterSocialIcons };
+const IconContainer = styled.div`
+  &:hover {
+    color: ${({ theme }) => theme.primary};
+  }
+`;
+
+export {
+  StyledFooter,
+  FooterEmail,
+  FooterDescription,
+  FooterSocialIcons,
+  IconContainer,
+};
