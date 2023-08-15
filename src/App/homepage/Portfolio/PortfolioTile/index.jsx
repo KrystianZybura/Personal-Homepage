@@ -10,7 +10,6 @@ import { useReposData } from "./useReposData";
 
 const PortfolioTile = () => {
   const reposData = useReposData();
-  console.log(reposData);
 
   return (
     <>
