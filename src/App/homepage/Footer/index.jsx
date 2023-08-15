@@ -18,13 +18,13 @@ const Footer = () => (
       {`I'm always open to new projects whenever I have the time. If you have a website, dashboard or mobile app in mind and need some help to make your ideas com to life, feel free to contact me ✌`}
     </FooterDescription>
     <FooterSocialIcons>
-      <IconContainer>
+      <IconContainer href="https://github.com/KrystianZybura">
         <Github />
       </IconContainer>
-      <IconContainer>
+      <IconContainer href="https://www.facebook.com/168299279807k">
         <Facebook />
       </IconContainer>
-      <IconContainer>
+      <IconContainer href="https://www.linkedin.com/in/krystian-żybura-062929288/">
         <LinkedIn />
       </IconContainer>
     </FooterSocialIcons>

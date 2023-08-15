@@ -25,7 +25,9 @@ const FooterSocialIcons = styled.div`
   gap: 24px;
 `;
 
-const IconContainer = styled.div`
+const IconContainer = styled.a`
+  color: inherit;
+
   &:hover {
     color: ${({ theme }) => theme.primary};
   }
