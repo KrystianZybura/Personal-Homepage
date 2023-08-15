@@ -10,6 +10,7 @@ const StyledFooter = styled.footer`
 const FooterEmail = styled.span`
   font-size: 32px;
   font-weight: 900;
+  justify-self: start;
 
   &:hover {
     color: ${({ theme }) => theme.primary};
