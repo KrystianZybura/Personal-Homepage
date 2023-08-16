@@ -1,31 +1,31 @@
 import { styled } from "styled-components";
 
-const Container = styled.div`
+const HeroContainer = styled.div`
   max-width: 633px;
 `;
 
-const Image = styled.img`
+const HeroImage = styled.img`
   width: 384px;
   height: 384px;
   border-radius: 50%;
   aspect-ratio: 1;
 `;
 
-const Title = styled.h1`
+const HeroTitle = styled.h1`
   font-size: 38px;
   color: #000;
   margin: 12px 0 35px;
   font-weight: 900;
 `;
 
-const About = styled.p`
+const HeroAbout = styled.p`
   font-size: 20px;
   margin-bottom: 32px;
   line-height: 28px;
   color: ${({ theme }) => theme.font};
 `;
 
-const HireEmail = styled.a`
+const HeroHire = styled.a`
   background-color: ${({ theme }) => theme.primary};
   color: #fff;
   text-decoration: none;
@@ -50,4 +50,4 @@ const HireEmail = styled.a`
   }
 `;
 
-export { HireEmail, Image, About, Title, Container };
+export { HeroHire, HeroImage, HeroAbout, HeroTitle, HeroContainer };

@@ -1,22 +1,28 @@
-import { ReactComponent as MessageIcon } from "../../../assets/message.svg";
+import { ReactComponent as EmailIcon } from "../../../assets/email-icon.svg";
 import { SpecialText } from "../../../common/SpecialText";
-import { About, Container, HireEmail, Image, Title } from "./styled";
+import {
+  HeroAbout,
+  HeroContainer,
+  HeroHire,
+  HeroImage,
+  HeroTitle,
+} from "./styled";
 
 const Hero = ({ name }) => (
   <>
-    <Image src="src/App/assets/image.png" alt={`Photo of ${name}`} />
-    <Container>
+    <HeroImage src="src/App/assets/image.png" alt={`Photo of ${name}`} />
+    <HeroContainer>
       <SpecialText>This is</SpecialText>
-      <Title>{name}</Title>
-      <About>
+      <HeroTitle>{name}</HeroTitle>
+      <HeroAbout>
         👌💻 I am a passionate Frontend Developer in love with react, currently
         looking for new job opportunities.
-      </About>
-      <HireEmail href="mailto:zybura.dev@gmail.com">
-        <MessageIcon />
+      </HeroAbout>
+      <HeroHire href="mailto:zybura.dev@gmail.com">
+        <EmailIcon />
         Hire Me
-      </HireEmail>
-    </Container>
+      </HeroHire>
+    </HeroContainer>
   </>
 );
 
