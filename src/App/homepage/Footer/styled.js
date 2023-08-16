@@ -7,10 +7,12 @@ const StyledFooter = styled.footer`
   margin: 120px 0 109px;
 `;
 
-const FooterEmail = styled.span`
+const FooterEmail = styled.a`
   font-size: 32px;
   font-weight: 900;
   justify-self: start;
+  text-decoration: none;
+  color: inherit;
 
   &:hover {
     color: ${({ theme }) => theme.primary};
