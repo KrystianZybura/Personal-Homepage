@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { ReactComponent as DarkThemeIcon } from "../../../assets/dark.svg";
 import { ReactComponent as LightThemeIcon } from "../../../assets/light.svg";
-import { SpecialText } from "../../../common/SpecialText";
+import { Initiation } from "../../../common/Initiation";
 import { ToggleThemeButton, ToggleThemeContainer } from "./styled";
 
 const ToggleTheme = () => {
@@ -10,7 +10,7 @@ const ToggleTheme = () => {
 
   return (
     <ToggleThemeContainer>
-      <SpecialText>{`Dark mode off`}</SpecialText>
+      <Initiation>{`Dark mode off`}</Initiation>
       <ToggleThemeButton
         onClick={() => setDarkTheme((darkTheme) => !darkTheme)}
       >

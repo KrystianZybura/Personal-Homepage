@@ -1,5 +1,5 @@
 import { ReactComponent as EmailIcon } from "../../../assets/email-icon.svg";
-import { SpecialText } from "../../../common/SpecialText";
+import { Initiation } from "../../../common/Initiation";
 import {
   HeroAbout,
   HeroContainer,
@@ -12,7 +12,7 @@ const Hero = ({ name }) => (
   <>
     <HeroImage src="src/App/assets/image.png" alt={`Photo of ${name}`} />
     <HeroContainer>
-      <SpecialText>This is</SpecialText>
+      <Initiation>This is</Initiation>
       <HeroTitle>{name}</HeroTitle>
       <HeroAbout>
         👌💻 I am a passionate Frontend Developer in love with react, currently

@@ -1,7 +1,7 @@
 import { ReactComponent as Facebook } from "../../assets/facebook.svg";
 import { ReactComponent as Github } from "../../assets/github.svg";
 import { ReactComponent as LinkedIn } from "../../assets/linkedIn.svg";
-import { SpecialText } from "../../common/SpecialText";
+import { Initiation } from "../../common/Initiation";
 import {
   FooterDescription,
   FooterEmail,
@@ -12,7 +12,7 @@ import {
 
 const Footer = () => (
   <StyledFooter>
-    <SpecialText>Lets talk!</SpecialText>
+    <Initiation>Lets talk!</Initiation>
     <FooterEmail href="mailto:zybura.dev@gmail.com">
       zybura.dev@gmail.com
     </FooterEmail>
