@@ -22,7 +22,7 @@ const PortfolioSubTitle = styled.span`
   font-size: 20px;
 `;
 
-const PortfolioContainer = styled.div`
+const PortfolioProjects = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 32px;
@@ -37,7 +37,7 @@ const PortfolioContainer = styled.div`
 `;
 
 export {
-  PortfolioContainer,
+  PortfolioProjects,
   PortfolioHeader,
   PortfolioLogo,
   PortfolioTitle,

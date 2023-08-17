@@ -2,9 +2,9 @@ import { ReactComponent as Logo } from "../../assets/github-logo.svg";
 import Loading from "./Loading";
 import Tile from "./Tile";
 import {
-  PortfolioContainer,
   PortfolioHeader,
   PortfolioLogo,
+  PortfolioProjects,
   PortfolioSubTitle,
   PortfolioTitle,
 } from "./styled";
@@ -22,9 +22,9 @@ const Portfolio = () => {
         <PortfolioTitle>Portfolio</PortfolioTitle>
         <PortfolioSubTitle>My recent projects</PortfolioSubTitle>
       </PortfolioHeader>
-      <PortfolioContainer $status={status}>
+      <PortfolioProjects $status={status}>
         {status === "loading" ? <Loading /> : <Tile repos={repos} />}
-      </PortfolioContainer>
+      </PortfolioProjects>
     </>
   );
 };
