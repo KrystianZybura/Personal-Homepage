@@ -23,7 +23,7 @@ const useReposData = () => {
       }
     };
 
-    setTimeout(fetchReposData, 5000);
+    setTimeout(fetchReposData, 1500);
   }, []);
 
   return reposData;
