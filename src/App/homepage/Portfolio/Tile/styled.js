@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-const Tile = styled.div`
+const StyledTile = styled.div`
   max-width: 592px;
   max-height: 322px;
   background: white;
@@ -55,7 +55,7 @@ const LinkDescription = styled.span`
 `;
 
 export {
-  Tile,
+  StyledTile,
   TileTitle,
   TileDescription,
   TileLink,

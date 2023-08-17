@@ -1,20 +1,20 @@
 import {
   LinkContainer,
   LinkDescription,
-  Tile,
+  StyledTile,
   TileDescription,
   TileLink,
   TileTitle,
 } from "./styled";
 import { useReposData } from "./useReposData";
 
-const PortfolioTile = () => {
+const Tile = () => {
   const reposData = useReposData();
 
   return (
     <>
       {reposData.repos.map(({ name, description, html_url, homepage }) => (
-        <Tile key={name}>
+        <StyledTile key={name}>
           <TileTitle>{name}</TileTitle>
           <TileDescription>{description}</TileDescription>
           <LinkContainer>
@@ -27,10 +27,10 @@ const PortfolioTile = () => {
               https://link.code.com
             </TileLink>
           </LinkContainer>
-        </Tile>
+        </StyledTile>
       ))}
     </>
   );
 };
 
-export default PortfolioTile;
+export default Tile;

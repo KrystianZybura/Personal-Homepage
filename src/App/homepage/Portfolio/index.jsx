@@ -1,5 +1,5 @@
 import { ReactComponent as Logo } from "../../assets/github-logo.svg";
-import PortfolioTile from "./PortfolioTile";
+import Tile from "./Tile";
 import {
   PortfolioContainer,
   PortfolioHeader,
@@ -19,7 +19,7 @@ const Portfolio = () => {
         <PortfolioSubTitle>My recent projects</PortfolioSubTitle>
       </PortfolioHeader>
       <PortfolioContainer>
-        <PortfolioTile />
+        <Tile />
       </PortfolioContainer>
     </>
   );
