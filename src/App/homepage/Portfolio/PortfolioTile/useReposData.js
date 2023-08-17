@@ -14,8 +14,10 @@ const useReposData = () => {
           `https://api.github.com/users/krystianzybura/repos`,
         );
 
+        const repos = response.data;
+
         setTimeout(() => {
-          setReposData({ status: "success", repos: response.data });
+          setReposData({ status: "success", repos });
         }, 1000);
       } catch (error) {
         console.error(error);
