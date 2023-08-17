@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import { css, styled } from "styled-components";
 
 const PortfolioHeader = styled.div`
   display: grid;
@@ -27,6 +27,13 @@ const PortfolioContainer = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-gap: 32px;
   margin-top: 24px;
+
+  ${({ $status }) =>
+    $status === "loading" &&
+    css`
+      grid-template-columns: 1fr;
+      place-items: center;
+    `}
 `;
 
 export {

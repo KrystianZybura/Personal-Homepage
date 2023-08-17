@@ -13,7 +13,9 @@ const spinAnimation = keyframes`
 const LoadingContainer = styled.div`
   display: grid;
   place-items: center;
+  grid-gap: 48px;
   height: 160px;
+  margin: 64px 0 140px;
 `;
 
 const LoadingText = styled.p`

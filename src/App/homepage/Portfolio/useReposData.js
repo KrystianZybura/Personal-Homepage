@@ -8,22 +8,22 @@ const useReposData = () => {
   });
 
   useEffect(() => {
-    (async () => {
+    const fetchReposData = async () => {
       try {
         const response = await axios.get(
           `https://api.github.com/users/krystianzybura/repos`,
         );
 
-        const repos = response.data;
+        const repos = await response.data;
 
-        setTimeout(() => {
-          setReposData({ status: "success", repos });
-        }, 1000);
+        setReposData({ status: "success", repos });
       } catch (error) {
         console.error(error);
         setReposData({ status: "error", repos: [] });
       }
-    })();
+    };
+
+    setTimeout(fetchReposData, 5000);
   }, []);
 
   return reposData;
