@@ -29,7 +29,7 @@ const PortfolioProjects = styled.div`
   margin-top: 24px;
 
   ${({ $status }) =>
-    $status === "loading" &&
+    ($status === "loading" || $status === "error") &&
     css`
       grid-template-columns: 1fr;
       place-items: center;
