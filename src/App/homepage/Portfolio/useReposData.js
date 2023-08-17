@@ -1,6 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
+const REPOS_API_URL = "https://api.github.com/users/krystianzybura/repos";
+
 const useReposData = () => {
   const [reposData, setReposData] = useState({
     status: "loading",
@@ -10,9 +12,7 @@ const useReposData = () => {
   useEffect(() => {
     const fetchReposData = async () => {
       try {
-        const response = await axios.get(
-          `https://api.github.com/users/krystianzybura/repos`,
-        );
+        const response = await axios.get(REPOS_API_URL);
 
         const repos = await response.data;
 
