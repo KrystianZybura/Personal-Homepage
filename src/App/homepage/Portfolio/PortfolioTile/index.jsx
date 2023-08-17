@@ -13,7 +13,7 @@ const PortfolioTile = () => {
 
   return (
     <>
-      {reposData.map(({ name, description, html_url, homepage }) => (
+      {reposData.repos.map(({ name, description, html_url, homepage }) => (
         <Tile key={name}>
           <TileTitle>{name}</TileTitle>
           <TileDescription>{description}</TileDescription>
