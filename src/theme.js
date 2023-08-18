@@ -1,7 +1,8 @@
 const theme = {
   light: {
     background: "#FBFBFE",
-    font: "#6E7E91",
+    fontSecondary: "#6E7E91",
+    font: "#252525",
     primary: "#0366D6",
     sectionBackground: "#FFFFFF",
     border: "#D1D5DA4D",

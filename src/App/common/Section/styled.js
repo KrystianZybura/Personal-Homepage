@@ -18,7 +18,7 @@ const SectionHeader = styled.h2`
 `;
 
 const SectionContainer = styled.div`
-  color: ${({ theme }) => theme.font};
+  color: ${({ theme }) => theme.fontSecondary};
 `;
 
 const SectionUl = styled.ul`

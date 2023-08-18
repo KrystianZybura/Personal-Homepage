@@ -25,7 +25,7 @@ const HeroTitle = styled.h1`
 const HeroAbout = styled.p`
   font-size: 20px;
   line-height: 28px;
-  color: ${({ theme }) => theme.font};
+  color: ${({ theme }) => theme.fontSecondary};
 `;
 
 const HeroHire = styled.a`

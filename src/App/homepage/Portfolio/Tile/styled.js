@@ -29,7 +29,7 @@ const TileTitle = styled.h3`
 
 const TileDescription = styled.div`
   max-width: 480px;
-  color: ${({ theme }) => theme.font};
+  color: ${({ theme }) => theme.fontSecondary};
 `;
 
 const TileLink = styled.a`
@@ -51,7 +51,7 @@ const LinkContainer = styled.div`
 `;
 
 const LinkDescription = styled.span`
-  color: ${({ theme }) => theme.font};
+  color: ${({ theme }) => theme.fontSecondary};
 `;
 
 export {
