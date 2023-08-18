@@ -17,7 +17,6 @@ const HeroImage = styled.img`
 
 const HeroTitle = styled.h1`
   font-size: 38px;
-  color: #000;
   font-weight: 900;
   margin: 0;
 `;
