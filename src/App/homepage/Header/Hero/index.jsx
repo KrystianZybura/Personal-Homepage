@@ -2,16 +2,16 @@ import { ReactComponent as EmailIcon } from "../../../assets/email-icon.svg";
 import { Initiation } from "../../../common/Initiation";
 import {
   HeroAbout,
-  HeroContainer,
   HeroHire,
   HeroImage,
   HeroTitle,
+  HeroWrapper,
 } from "./styled";
 
 const Hero = ({ name }) => (
   <>
     <HeroImage src="src/App/assets/image.png" alt={`Photo of ${name}`} />
-    <HeroContainer>
+    <HeroWrapper>
       <Initiation>This is</Initiation>
       <HeroTitle>{name}</HeroTitle>
       <HeroAbout>
@@ -22,7 +22,7 @@ const Hero = ({ name }) => (
         <EmailIcon />
         Hire Me
       </HeroHire>
-    </HeroContainer>
+    </HeroWrapper>
   </>
 );
 

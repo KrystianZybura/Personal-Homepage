@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-const HeroContainer = styled.div`
+const HeroWrapper = styled.div`
   max-width: 633px;
   display: flex;
   flex-direction: column;
@@ -51,4 +51,4 @@ const HeroHire = styled.a`
   }
 `;
 
-export { HeroHire, HeroImage, HeroAbout, HeroTitle, HeroContainer };
+export { HeroHire, HeroImage, HeroAbout, HeroTitle, HeroWrapper };
