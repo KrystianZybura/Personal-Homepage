@@ -20,13 +20,25 @@ const Footer = () => (
       {`I'm always open to new projects whenever I have the time. If you have a website, dashboard or mobile app in mind and need some help to make your ideas com to life, feel free to contact me ✌`}
     </FooterDescription>
     <FooterSocialIcons>
-      <IconContainer href="https://github.com/KrystianZybura">
+      <IconContainer
+        rel="no-referrer"
+        target="_blank"
+        href="https://github.com/KrystianZybura"
+      >
         <Github />
       </IconContainer>
-      <IconContainer href="https://www.facebook.com/168299279807k">
+      <IconContainer
+        rel="no-referrer"
+        target="_blank"
+        href="https://www.facebook.com/168299279807k"
+      >
         <Facebook />
       </IconContainer>
-      <IconContainer href="https://www.linkedin.com/in/krystian-żybura-062929288/">
+      <IconContainer
+        rel="no-referrer"
+        target="_blank"
+        href="https://www.linkedin.com/in/krystian-żybura-062929288/"
+      >
         <LinkedIn />
       </IconContainer>
     </FooterSocialIcons>
