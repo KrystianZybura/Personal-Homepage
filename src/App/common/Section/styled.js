@@ -7,18 +7,25 @@ const StyledSection = styled.section`
     0px -2px 50px 0px ${({ theme }) => theme.secondBoxShadow};
   padding: 32px;
   margin-top: 73px;
+
+  @media (max-width: 767px) {
+    margin-top: 48px;
+    padding: 16px;
+  }
 `;
 
 const SectionHeader = styled.h2`
   font-size: 30px;
   font-weight: 900;
   padding-bottom: 15px;
-  margin: 0 0 32px 0;
+  margin-bottom: 25px;
   border-bottom: 1px solid ${({ theme }) => theme.border};
-`;
 
-const SectionContainer = styled.div`
-  color: ${({ theme }) => theme.fontSecondary};
+  @media (max-width: 767px) {
+    padding-bottom: 12px;
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
 `;
 
 const SectionUl = styled.ul`
@@ -28,10 +35,19 @@ const SectionUl = styled.ul`
   gap: 16px;
   margin: 0;
   padding-left: 15px;
+  color: ${({ theme }) => theme.fontSecondary};
+
+  @media (max-width: 1100px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const SectionLi = styled.li`
   padding-left: 8px;
 `;
 
-export { SectionUl, SectionLi, StyledSection, SectionHeader, SectionContainer };
+export { SectionUl, SectionLi, StyledSection, SectionHeader };
