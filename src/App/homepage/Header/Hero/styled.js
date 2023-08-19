@@ -5,26 +5,46 @@ const HeroWrapper = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 32px;
+
+  @media (max-width: 767px) {
+    gap: 16px;
+  }
 `;
 
 const HeroImage = styled.img`
-  width: 384px;
-  height: 384px;
+  width: 400px;
   border-radius: 50%;
   aspect-ratio: 1;
+  padding: 16px;
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    width: 200px;
+    justify-self: start;
+  }
 `;
 
 const HeroTitle = styled.h1`
   font-size: 38px;
   font-weight: 900;
   margin: 0;
+
+  @media (max-width: 767px) {
+    font-size: 22px;
+  }
 `;
 
 const HeroAbout = styled.p`
   font-size: 20px;
   line-height: 28px;
+  margin: 0px;
   color: ${({ theme }) => theme.fontSecondary};
+
+  @media (max-width: 767px) {
+    font-size: 17px;
+    line-height: 24px;
+  }
 `;
 
 const HeroHire = styled.a`
@@ -41,6 +61,12 @@ const HeroHire = styled.a`
   background-color: ${({ theme }) => theme.primary};
   color: #fff;
   text-decoration: none;
+
+  @media (max-width: 767px) {
+    gap: 14px;
+    font-size: 18px;
+    max-width: 139px;
+  }
 
   &:hover {
     box-shadow:

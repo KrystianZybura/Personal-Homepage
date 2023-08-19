@@ -5,6 +5,11 @@ const StyledHeader = styled.header`
   grid-template-columns: auto 1fr;
   margin-top: 119px;
   place-items: center;
+
+  @media (max-width: 780px) {
+    grid-template-columns: 1fr;
+    margin-top: 32px;
+  }
 `;
 
 export { StyledHeader };
