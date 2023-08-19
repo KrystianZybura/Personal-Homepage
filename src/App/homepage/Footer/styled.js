@@ -5,6 +5,11 @@ const StyledFooter = styled.footer`
   grid-template-columns: 1fr;
   grid-gap: 24px;
   margin: 120px 0 109px;
+
+  @media (max-width: 767px) {
+    grid-gap: 12px;
+    margin: 48px 0 31px;
+  }
 `;
 
 const FooterEmail = styled.a`
@@ -14,6 +19,10 @@ const FooterEmail = styled.a`
   text-decoration: none;
   color: inherit;
 
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
+
   &:hover {
     color: ${({ theme }) => theme.primary};
   }
@@ -21,11 +30,18 @@ const FooterEmail = styled.a`
 
 const FooterDescription = styled.p`
   max-width: 670px;
+  margin: 0;
 `;
 
 const FooterSocialIcons = styled.div`
   display: flex;
   gap: 24px;
+  margin-top: 32px;
+
+  @media (max-width: 767px) {
+    gap: 16px;
+    margin-top: 24px;
+  }
 `;
 
 const IconContainer = styled.a`
