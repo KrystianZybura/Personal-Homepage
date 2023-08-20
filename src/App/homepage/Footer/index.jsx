@@ -1,9 +1,9 @@
 import { Initiation } from "../../common/Initiation";
+import FooterLink from "./FooterLink";
 import {
   FacebookIcon,
   FooterDescription,
   FooterEmail,
-  FooterLink,
   FooterSocialIcons,
   GithubIcon,
   LinkedInIcon,
@@ -20,25 +20,13 @@ const Footer = () => (
       {`I'm always open to new projects whenever I have the time. If you have a website, dashboard or mobile app in mind and need some help to make your ideas com to life, feel free to contact me ✌`}
     </FooterDescription>
     <FooterSocialIcons>
-      <FooterLink
-        rel="no-referrer"
-        target="_blank"
-        href="https://github.com/KrystianZybura"
-      >
+      <FooterLink href="https://github.com/KrystianZybura">
         <GithubIcon />
       </FooterLink>
-      <FooterLink
-        rel="no-referrer"
-        target="_blank"
-        href="https://www.facebook.com/168299279807k"
-      >
+      <FooterLink href="https://www.facebook.com/168299279807k">
         <FacebookIcon />
       </FooterLink>
-      <FooterLink
-        rel="no-referrer"
-        target="_blank"
-        href="https://www.linkedin.com/in/krystian-żybura-062929288/"
-      >
+      <FooterLink href="https://www.linkedin.com/in/krystian-żybura-062929288/">
         <LinkedInIcon />
       </FooterLink>
     </FooterSocialIcons>

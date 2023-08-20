@@ -48,14 +48,6 @@ const FooterSocialIcons = styled.div`
   }
 `;
 
-const FooterLink = styled.a`
-  color: inherit;
-
-  &:hover {
-    color: ${({ theme }) => theme.primary};
-  }
-`;
-
 const createFooterIcon = (svg) => styled(svg)`
   width: 48px;
 
@@ -69,7 +61,6 @@ export {
   FooterEmail,
   FooterDescription,
   FooterSocialIcons,
-  FooterLink,
   createFooterIcon,
 };
 
