@@ -1,12 +1,12 @@
-import { ReactComponent as Facebook } from "../../assets/facebook.svg";
-import { ReactComponent as Github } from "../../assets/github.svg";
-import { ReactComponent as LinkedIn } from "../../assets/linkedIn.svg";
 import { Initiation } from "../../common/Initiation";
 import {
+  FacebookIcon,
   FooterDescription,
   FooterEmail,
+  FooterLink,
   FooterSocialIcons,
-  IconContainer,
+  GithubIcon,
+  LinkedInIcon,
   StyledFooter,
 } from "./styled";
 
@@ -20,27 +20,27 @@ const Footer = () => (
       {`I'm always open to new projects whenever I have the time. If you have a website, dashboard or mobile app in mind and need some help to make your ideas com to life, feel free to contact me ✌`}
     </FooterDescription>
     <FooterSocialIcons>
-      <IconContainer
+      <FooterLink
         rel="no-referrer"
         target="_blank"
         href="https://github.com/KrystianZybura"
       >
-        <Github />
-      </IconContainer>
-      <IconContainer
+        <GithubIcon />
+      </FooterLink>
+      <FooterLink
         rel="no-referrer"
         target="_blank"
         href="https://www.facebook.com/168299279807k"
       >
-        <Facebook />
-      </IconContainer>
-      <IconContainer
+        <FacebookIcon />
+      </FooterLink>
+      <FooterLink
         rel="no-referrer"
         target="_blank"
         href="https://www.linkedin.com/in/krystian-żybura-062929288/"
       >
-        <LinkedIn />
-      </IconContainer>
+        <LinkedInIcon />
+      </FooterLink>
     </FooterSocialIcons>
   </StyledFooter>
 );

@@ -1,5 +1,9 @@
 import { styled } from "styled-components";
 
+import { ReactComponent as Facebook } from "../../assets/facebook.svg";
+import { ReactComponent as Github } from "../../assets/github.svg";
+import { ReactComponent as LinkedIn } from "../../assets/linkedIn.svg";
+
 const StyledFooter = styled.footer`
   display: grid;
   grid-template-columns: 1fr;
@@ -44,11 +48,19 @@ const FooterSocialIcons = styled.div`
   }
 `;
 
-const IconContainer = styled.a`
+const FooterLink = styled.a`
   color: inherit;
 
   &:hover {
     color: ${({ theme }) => theme.primary};
+  }
+`;
+
+const createFooterIcon = (svg) => styled(svg)`
+  width: 48px;
+
+  @media (max-width: 767px) {
+    width: 32px;
   }
 `;
 
@@ -57,5 +69,10 @@ export {
   FooterEmail,
   FooterDescription,
   FooterSocialIcons,
-  IconContainer,
+  FooterLink,
+  createFooterIcon,
 };
+
+export const FacebookIcon = createFooterIcon(Facebook);
+export const GithubIcon = createFooterIcon(Github);
+export const LinkedInIcon = createFooterIcon(LinkedIn);
