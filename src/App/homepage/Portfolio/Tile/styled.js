@@ -28,10 +28,14 @@ const StyledTile = styled.div`
 `;
 
 const TileTitle = styled.h3`
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 700;
   color: ${({ theme }) => theme.primary};
   margin: 0px;
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
 `;
 
 const TileDescription = styled.div`
