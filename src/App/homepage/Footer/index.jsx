@@ -4,7 +4,7 @@ import {
   FacebookIcon,
   FooterDescription,
   FooterEmail,
-  FooterSocialIcons,
+  FooterSocials,
   GithubIcon,
   LinkedInIcon,
   StyledFooter,
@@ -19,7 +19,7 @@ const Footer = () => (
     <FooterDescription>
       {`I'm always open to new projects whenever I have the time. If you have a website, dashboard or mobile app in mind and need some help to make your ideas com to life, feel free to contact me ✌`}
     </FooterDescription>
-    <FooterSocialIcons>
+    <FooterSocials>
       <FooterLink href="https://github.com/KrystianZybura">
         <GithubIcon />
       </FooterLink>
@@ -29,7 +29,7 @@ const Footer = () => (
       <FooterLink href="https://www.linkedin.com/in/krystian-żybura-062929288/">
         <LinkedInIcon />
       </FooterLink>
-    </FooterSocialIcons>
+    </FooterSocials>
   </StyledFooter>
 );
 export default Footer;

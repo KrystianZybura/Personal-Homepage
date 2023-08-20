@@ -37,7 +37,7 @@ const FooterDescription = styled.p`
   margin: 0;
 `;
 
-const FooterSocialIcons = styled.div`
+const FooterSocials = styled.div`
   display: flex;
   gap: 24px;
   margin-top: 32px;
@@ -60,7 +60,7 @@ export {
   StyledFooter,
   FooterEmail,
   FooterDescription,
-  FooterSocialIcons,
+  FooterSocials,
   createFooterIcon,
 };
 
