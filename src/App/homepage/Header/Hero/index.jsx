@@ -10,7 +10,7 @@ import {
 
 const Hero = ({ name }) => (
   <>
-    <HeroImage src="src/App/assets/image.png" alt={`Photo of ${name}`} />
+    <HeroImage src="src/App/assets/hero.png" alt={`Photo of ${name}`} />
     <HeroWrapper>
       <Initiation>This is</Initiation>
       <HeroTitle>{name}</HeroTitle>

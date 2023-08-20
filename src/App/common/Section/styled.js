@@ -29,7 +29,7 @@ const SectionHeader = styled.h2`
 `;
 
 const SectionUl = styled.ul`
-  list-style-image: url("src/App/assets/ellipse.svg");
+  list-style-image: url("src/App/assets/list-style.svg");
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 16px;
