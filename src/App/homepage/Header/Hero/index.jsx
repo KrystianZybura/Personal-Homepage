@@ -1,4 +1,5 @@
 import { ReactComponent as EmailIcon } from "../../../assets/email-icon.svg";
+import heroImageUrl from "../../../assets/hero.png";
 import { Initiation } from "../../../common/Initiation";
 import {
   HeroAbout,
@@ -10,7 +11,7 @@ import {
 
 const Hero = ({ name }) => (
   <>
-    <HeroImage src="src/App/assets/hero.png" alt={`Photo of ${name}`} />
+    <HeroImage src={heroImageUrl} alt={`Photo of ${name}`} />
     <HeroWrapper>
       <Initiation>This is</Initiation>
       <HeroTitle>{name}</HeroTitle>
