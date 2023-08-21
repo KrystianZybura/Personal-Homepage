@@ -1,10 +1,10 @@
-import Footer from "./homepage/Footer";
-import FutureDevelopment from "./homepage/FutureDevelopment";
-import Header from "./homepage/Header";
-import Hero from "./homepage/Header/Hero";
-import ToggleTheme from "./homepage/Header/ToggleTheme";
-import Portfolio from "./homepage/Portfolio";
-import Skillset from "./homepage/Skillset";
+import Footer from "./core/Footer";
+import FutureDevelopment from "./core/FutureDevelopment";
+import Header from "./core/Header";
+import Hero from "./core/Header/Hero";
+import ToggleTheme from "./core/Header/ToggleTheme";
+import Portfolio from "./core/Portfolio";
+import Skillset from "./core/Skillset";
 
 function App() {
   return (
