@@ -1,9 +1,11 @@
+import Hero from "./Hero";
+import ToggleTheme from "./ToggleTheme";
 import { StyledHeader } from "./styled";
 
-const Header = ({ hero, toggleTheme }) => (
+const Header = () => (
   <StyledHeader>
-    {hero}
-    {toggleTheme}
+    <Hero name={"Krystian Żybura"} />
+    <ToggleTheme />
   </StyledHeader>
 );
 
