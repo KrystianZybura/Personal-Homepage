@@ -16,7 +16,7 @@ const Hero = ({ name }) => (
       <Initiation>This is</Initiation>
       <HeroTitle>{name}</HeroTitle>
       <HeroAbout>
-        👌💻 I am a passionate Frontend Developer in love with react, currently
+        👌💻 I am a passionate Frontend Developer in love with React, currently
         looking for new job opportunities.
       </HeroAbout>
       <HeroHire href="mailto:zybura.dev@gmail.com">
