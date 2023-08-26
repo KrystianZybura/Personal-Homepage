@@ -7,7 +7,7 @@ const StyledTile = styled.div`
   align-items: center;
   max-width: 592px;
   max-height: 322px;
-  background: white;
+  background: ${({ theme }) => theme.sectionBackground};
   border: 6px solid ${({ theme }) => theme.border};
   border-radius: 4px;
   padding: 56px;
