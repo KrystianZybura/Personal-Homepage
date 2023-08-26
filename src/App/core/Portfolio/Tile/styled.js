@@ -45,12 +45,12 @@ const TileDescription = styled.div`
 const TileLink = styled.a`
   color: ${({ theme }) => theme.primary};
   text-decoration: none;
-  border-bottom: 1px solid ${({ theme }) => theme.borderHover};
+  border-bottom: 1px solid currentColor;
   justify-self: start;
   padding-bottom: 2px;
 
   &:hover {
-    border-color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.borderHover};
   }
 `;
 
