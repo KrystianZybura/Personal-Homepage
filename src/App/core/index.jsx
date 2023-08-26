@@ -4,9 +4,9 @@ import Header from "./Header";
 import Portfolio from "./Portfolio";
 import Skillset from "./Skillset";
 
-const PersonalHomepage = () => (
+const PersonalHomepage = ({ toggleDark }) => (
   <>
-    <Header />
+    <Header toggleDark={toggleDark} />
     <Skillset />
     <FutureDevelopment />
     <Portfolio />
