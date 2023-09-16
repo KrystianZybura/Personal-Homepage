@@ -1,12 +1,9 @@
 import { styled } from "styled-components";
 
 const StyledTile = styled.div`
-  display: grid;
-  grid-gap: 24px;
-  justify-content: center;
-  align-items: center;
-  max-width: 592px;
-  max-height: 322px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   background: ${({ theme }) => theme.sectionBackground};
   border: 6px solid ${({ theme }) => theme.border};
   border-radius: 4px;
@@ -15,15 +12,14 @@ const StyledTile = styled.div`
     0px 16px 58px 0px ${({ theme }) => theme.firstBoxShadow},
     0px -2px 50px 0px ${({ theme }) => theme.secondBoxShadow};
 
-  @media (max-width: 768px) {
-    grid-gap: 16px;
-    padding: 24px;
-    max-width: 100%;
-    justify-content: start;
-  }
-
   &:hover {
     border-color: ${({ theme }) => theme.borderHover};
+  }
+
+  @media (max-width: 768px) {
+    gap: 16px;
+    padding: 24px;
+    max-width: 100%;
   }
 `;
 
