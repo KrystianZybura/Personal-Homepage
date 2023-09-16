@@ -10,7 +10,7 @@ const StyledFooter = styled.footer`
   grid-gap: 24px;
   margin: 120px 0 109px;
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     grid-gap: 12px;
     margin: 48px 0 31px;
   }
@@ -23,12 +23,12 @@ const FooterEmail = styled.a`
   text-decoration: none;
   color: inherit;
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     font-size: 18px;
   }
 
   &:hover {
-    color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.styles.primary};
   }
 `;
 
@@ -42,7 +42,7 @@ const FooterSocials = styled.div`
   gap: 24px;
   margin-top: 32px;
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     gap: 16px;
     margin-top: 24px;
   }
@@ -51,7 +51,7 @@ const FooterSocials = styled.div`
 const createFooterIcon = (svg) => styled(svg)`
   width: 48px;
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     width: 32px;
   }
 `;

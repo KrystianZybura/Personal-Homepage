@@ -4,7 +4,7 @@ const Initiation = styled.span`
   font-weight: 700;
   font-size: 12px;
   text-transform: uppercase;
-  color: ${({ theme }) => theme.fontSecondary};
+  color: ${({ theme }) => theme.styles.fontSecondary};
 `;
 
 export { Initiation };

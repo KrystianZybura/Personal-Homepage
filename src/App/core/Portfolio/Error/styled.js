@@ -17,11 +17,11 @@ const ErrorMessage = styled.p`
 
 const ErrorLink = styled.a`
   padding: 12px 16px;
-  border: 1px solid ${({ theme }) => theme.border};
+  border: 1px solid ${({ theme }) => theme.styles.border};
   border-radius: 5px;
   font-weight: 600;
   font-size: 20px;
-  background-color: ${({ theme }) => theme.primary};
+  background-color: ${({ theme }) => theme.styles.primary};
   color: #fff;
   text-decoration: none;
   display: inline-block;
@@ -29,10 +29,10 @@ const ErrorLink = styled.a`
 
   &:hover {
     box-shadow:
-      -2px -2px 0px 0px ${({ theme }) => theme.buttonBoxShadow},
-      2px 2px 0px 0px ${({ theme }) => theme.buttonBoxShadow},
-      -2px 2px 0px 0px ${({ theme }) => theme.buttonBoxShadow},
-      2px -2px 0px 0px ${({ theme }) => theme.buttonBoxShadow};
+      -2px -2px 0px 0px ${({ theme }) => theme.styles.buttonBoxShadow},
+      2px 2px 0px 0px ${({ theme }) => theme.styles.buttonBoxShadow},
+      -2px 2px 0px 0px ${({ theme }) => theme.styles.buttonBoxShadow},
+      2px -2px 0px 0px ${({ theme }) => theme.styles.buttonBoxShadow};
   }
 `;
 

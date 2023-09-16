@@ -8,16 +8,16 @@ const PortfolioHeader = styled.div`
   margin-top: 72px;
   grid-gap: 8px;
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     margin-top: 48px;
   }
 `;
 
 const PortfolioLogo = styled(Logo)`
-  color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.styles.primary};
   margin-bottom: 4px;
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     width: 32px;
   }
 `;
@@ -27,7 +27,7 @@ const PortfolioTitle = styled.h2`
   font-weight: 900;
   margin: 0;
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     font-size: 18px;
   }
 `;
@@ -35,7 +35,7 @@ const PortfolioTitle = styled.h2`
 const PortfolioSubTitle = styled.span`
   font-size: 20px;
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     font-size: 17px;
   }
 `;

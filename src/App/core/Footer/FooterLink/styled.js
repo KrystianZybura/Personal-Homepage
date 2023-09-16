@@ -4,7 +4,7 @@ const StyledFooterLink = styled.a`
   color: inherit;
 
   &:hover {
-    color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.styles.primary};
   }
 `;
 

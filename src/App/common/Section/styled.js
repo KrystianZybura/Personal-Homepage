@@ -1,14 +1,14 @@
 import { styled } from "styled-components";
 
 const StyledSection = styled.section`
-  background: ${({ theme }) => theme.sectionBackground};
+  background: ${({ theme }) => theme.styles.sectionBackground};
   box-shadow:
-    0px 16px 58px 0px ${({ theme }) => theme.firstBoxShadow},
-    0px -2px 50px 0px ${({ theme }) => theme.secondBoxShadow};
+    0px 16px 58px 0px ${({ theme }) => theme.styles.firstBoxShadow},
+    0px -2px 50px 0px ${({ theme }) => theme.styles.secondBoxShadow};
   padding: 32px;
   margin-top: 73px;
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     margin-top: 48px;
     padding: 16px;
   }
@@ -19,9 +19,9 @@ const SectionHeader = styled.h2`
   font-weight: 900;
   padding-bottom: 15px;
   margin-bottom: 25px;
-  border-bottom: 1px solid ${({ theme }) => theme.border};
+  border-bottom: 1px solid ${({ theme }) => theme.styles.border};
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     padding-bottom: 12px;
     font-size: 18px;
     margin-bottom: 25px;
@@ -35,7 +35,7 @@ const SectionUl = styled.ul`
   gap: 16px;
   margin: 0;
   padding-left: 15px;
-  color: ${({ theme }) => theme.fontSecondary};
+  color: ${({ theme }) => theme.styles.fontSecondary};
 
   @media (max-width: 1100px) {
     grid-template-columns: 1fr 1fr;
