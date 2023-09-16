@@ -1,4 +1,4 @@
-const theme = {
+const themes = {
   light: {
     background: "#FBFBFE",
     fontSecondary: "#6E7E91",
@@ -23,5 +23,13 @@ const theme = {
     buttonBoxShadow: "#6D93BE",
   },
 };
+
+const breakpoints = {
+  laptop: "1200px",
+  tablet: "767px",
+  mobile: "550px",
+};
+
+const theme = { ...themes, breakpoints };
 
 export { theme };
