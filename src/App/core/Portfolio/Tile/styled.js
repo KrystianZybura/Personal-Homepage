@@ -50,7 +50,7 @@ const TileLink = styled.a`
   padding-bottom: 2px;
 
   &:hover {
-    color: ${({ theme }) => theme.borderHover};
+    filter: brightness(120%);
   }
 `;
 
