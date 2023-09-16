@@ -5,15 +5,18 @@ import { ReactComponent as LightThemeIcon } from "../../../assets/light.svg";
 import { Initiation } from "../../../common/Initiation";
 import { ToggleThemeButton, ToggleThemeContainer } from "./styled";
 
-const ToggleTheme = () => {
+const ToggleTheme = ({ toggleDark }) => {
   const [darkTheme, setDarkTheme] = useState(false);
+
+  const darkThemeHandler = () => {
+    toggleDark();
+    setDarkTheme((darkTheme) => !darkTheme);
+  };
 
   return (
     <ToggleThemeContainer>
       <Initiation>{`Dark mode off`}</Initiation>
-      <ToggleThemeButton
-        onClick={() => setDarkTheme((darkTheme) => !darkTheme)}
-      >
+      <ToggleThemeButton onClick={() => darkThemeHandler()}>
         {darkTheme ? <DarkThemeIcon /> : <LightThemeIcon />}
       </ToggleThemeButton>
     </ToggleThemeContainer>

@@ -1,5 +1,7 @@
 import { css, styled } from "styled-components";
 
+import { ReactComponent as Logo } from "../../assets/github-logo.svg";
+
 const PortfolioHeader = styled.div`
   display: grid;
   place-items: center;
@@ -11,9 +13,13 @@ const PortfolioHeader = styled.div`
   }
 `;
 
-const PortfolioLogo = styled.div`
+const PortfolioLogo = styled(Logo)`
   color: ${({ theme }) => theme.primary};
   margin-bottom: 4px;
+
+  @media (max-width: 767px) {
+    width: 32px;
+  }
 `;
 
 const PortfolioTitle = styled.h2`

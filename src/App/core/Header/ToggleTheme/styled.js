@@ -13,6 +13,7 @@ const ToggleThemeButton = styled.button`
   border: none;
   padding: 0;
   background: transparent;
+  cursor: pointer;
 `;
 
 export { ToggleThemeButton, ToggleThemeContainer };

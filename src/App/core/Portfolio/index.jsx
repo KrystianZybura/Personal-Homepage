@@ -1,4 +1,3 @@
-import { ReactComponent as Logo } from "../../assets/github-logo.svg";
 import Error from "./Error";
 import Loading from "./Loading";
 import Tile from "./Tile";
@@ -17,9 +16,7 @@ const Portfolio = () => {
   return (
     <>
       <PortfolioHeader>
-        <PortfolioLogo>
-          <Logo />
-        </PortfolioLogo>
+        <PortfolioLogo />
         <PortfolioTitle>Portfolio</PortfolioTitle>
         <PortfolioSubTitle>My recent projects</PortfolioSubTitle>
       </PortfolioHeader>

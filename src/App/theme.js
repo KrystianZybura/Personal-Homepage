@@ -13,6 +13,14 @@ const theme = {
   },
   dark: {
     background: "#252525",
+    font: "#FFFFFF",
+    primary: "#2188FF",
+    sectionBackground: "#363636B8",
+    border: "#D1D5DA1A",
+    borderHover: "#0366D680",
+    firstBoxShadow: "#090A3308",
+    secondBoxShadow: "#090A3305",
+    buttonBoxShadow: "#6D93BE",
   },
 };
 
