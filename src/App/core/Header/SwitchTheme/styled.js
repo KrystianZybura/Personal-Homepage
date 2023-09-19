@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-const ToggleThemeContainer = styled.div`
+const SwitchThemeContainer = styled.div`
   position: absolute;
   justify-self: end;
   align-self: flex-start;
@@ -9,11 +9,11 @@ const ToggleThemeContainer = styled.div`
   gap: 12px;
 `;
 
-const ToggleThemeButton = styled.button`
+const SwitchThemeButton = styled.button`
   border: none;
   padding: 0;
   background: transparent;
   cursor: pointer;
 `;
 
-export { ToggleThemeButton, ToggleThemeContainer };
+export { SwitchThemeButton, SwitchThemeContainer };

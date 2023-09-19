@@ -3,24 +3,24 @@ import { useState } from "react";
 import { ReactComponent as DarkThemeIcon } from "../../../assets/dark.svg";
 import { ReactComponent as LightThemeIcon } from "../../../assets/light.svg";
 import { Initiation } from "../../../common/Initiation";
-import { ToggleThemeButton, ToggleThemeContainer } from "./styled";
+import { SwitchThemeButton, SwitchThemeContainer } from "./styled";
 
-const ToggleTheme = ({ toggleDark }) => {
+const SwitchTheme = ({ SwitchDark }) => {
   const [darkTheme, setDarkTheme] = useState(false);
 
   const darkThemeHandler = () => {
-    toggleDark();
+    SwitchDark();
     setDarkTheme((darkTheme) => !darkTheme);
   };
 
   return (
-    <ToggleThemeContainer>
+    <SwitchThemeContainer>
       <Initiation>{`Dark mode off`}</Initiation>
-      <ToggleThemeButton onClick={() => darkThemeHandler()}>
+      <SwitchThemeButton onClick={() => darkThemeHandler()}>
         {darkTheme ? <DarkThemeIcon /> : <LightThemeIcon />}
-      </ToggleThemeButton>
-    </ToggleThemeContainer>
+      </SwitchThemeButton>
+    </SwitchThemeContainer>
   );
 };
 
-export default ToggleTheme;
+export default SwitchTheme;
