@@ -9,13 +9,13 @@ import {
 
 const Tile = ({ repos }) => (
   <>
-    {repos.map(({ name, description, html_url, homepage }) => (
+    {repos.map(({ name, description, html_url, website }) => (
       <StyledTile key={name}>
         <TileTitle>{name}</TileTitle>
         <TileDescription>{description}</TileDescription>
         <LinkContainer>
           <LinkDescription>Demo:</LinkDescription>
-          <TileLink rel="no-referrer" target="_blank" href={homepage}>
+          <TileLink rel="no-referrer" target="_blank" href={website}>
             https://link.demo.com
           </TileLink>
           <LinkDescription>Code:</LinkDescription>
