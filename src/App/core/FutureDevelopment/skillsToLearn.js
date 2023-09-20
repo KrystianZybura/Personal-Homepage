@@ -3,6 +3,6 @@ export const skillsToLearn = [
   "TypeScript",
   "Node.js",
   "Next.js",
-  "Cypress",
+  "TanStack Query",
   "JS classes",
 ];
