@@ -1,4 +1,4 @@
-const skillsToLearn = [
+export const skillsToLearn = [
   "React Context",
   "TypeScript",
   "Node.js",
@@ -6,5 +6,3 @@ const skillsToLearn = [
   "Cypress",
   "JS classes",
 ];
-
-export { skillsToLearn };

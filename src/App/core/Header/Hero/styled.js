@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-const HeroWrapper = styled.div`
+export const HeroWrapper = styled.div`
   max-width: 633px;
   display: flex;
   flex-direction: column;
@@ -12,7 +12,7 @@ const HeroWrapper = styled.div`
   }
 `;
 
-const HeroImage = styled.img`
+export const HeroImage = styled.img`
   width: 400px;
   border-radius: 50%;
   aspect-ratio: 1;
@@ -25,7 +25,7 @@ const HeroImage = styled.img`
   }
 `;
 
-const HeroTitle = styled.h1`
+export const HeroTitle = styled.h1`
   font-size: 38px;
   font-weight: 900;
   margin: 0;
@@ -35,7 +35,7 @@ const HeroTitle = styled.h1`
   }
 `;
 
-const HeroAbout = styled.p`
+export const HeroAbout = styled.p`
   font-size: 20px;
   line-height: 28px;
   margin: 0px;
@@ -47,7 +47,7 @@ const HeroAbout = styled.p`
   }
 `;
 
-const HeroHire = styled.a`
+export const HeroHire = styled.a`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -76,5 +76,3 @@ const HeroHire = styled.a`
       2px -2px 0px 0px ${({ theme }) => theme.styles.buttonBoxShadow};
   }
 `;
-
-export { HeroHire, HeroImage, HeroAbout, HeroTitle, HeroWrapper };

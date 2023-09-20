@@ -2,7 +2,7 @@ import { css, styled } from "styled-components";
 
 import { ReactComponent as Logo } from "../../assets/github-logo.svg";
 
-const PortfolioHeader = styled.div`
+export const PortfolioHeader = styled.div`
   display: grid;
   place-items: center;
   margin-top: 72px;
@@ -13,7 +13,7 @@ const PortfolioHeader = styled.div`
   }
 `;
 
-const PortfolioLogo = styled(Logo)`
+export const PortfolioLogo = styled(Logo)`
   color: ${({ theme }) => theme.styles.primary};
   margin-bottom: 4px;
 
@@ -22,7 +22,7 @@ const PortfolioLogo = styled(Logo)`
   }
 `;
 
-const PortfolioTitle = styled.h2`
+export const PortfolioTitle = styled.h2`
   font-size: 30px;
   font-weight: 900;
   margin: 0;
@@ -32,7 +32,7 @@ const PortfolioTitle = styled.h2`
   }
 `;
 
-const PortfolioSubTitle = styled.span`
+export const PortfolioSubTitle = styled.span`
   font-size: 20px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
@@ -40,7 +40,7 @@ const PortfolioSubTitle = styled.span`
   }
 `;
 
-const PortfolioProjects = styled.div`
+export const PortfolioProjects = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 32px;
@@ -58,11 +58,3 @@ const PortfolioProjects = styled.div`
     grid-gap: 16px;
   }
 `;
-
-export {
-  PortfolioProjects,
-  PortfolioHeader,
-  PortfolioLogo,
-  PortfolioTitle,
-  PortfolioSubTitle,
-};

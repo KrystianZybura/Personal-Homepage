@@ -32,4 +32,5 @@ const Footer = () => (
     </FooterSocials>
   </StyledFooter>
 );
+
 export default Footer;

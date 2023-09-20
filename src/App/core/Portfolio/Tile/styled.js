@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-const StyledTile = styled.div`
+export const StyledTile = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -23,7 +23,7 @@ const StyledTile = styled.div`
   }
 `;
 
-const TileTitle = styled.h3`
+export const TileTitle = styled.h3`
   font-size: 24px;
   font-weight: 700;
   color: ${({ theme }) => theme.styles.primary};
@@ -34,11 +34,11 @@ const TileTitle = styled.h3`
   }
 `;
 
-const TileDescription = styled.div`
+export const TileDescription = styled.div`
   color: ${({ theme }) => theme.styles.fontSecondary};
 `;
 
-const TileLink = styled.a`
+export const TileLink = styled.a`
   color: ${({ theme }) => theme.styles.primary};
   text-decoration: none;
   border-bottom: 1px solid currentColor;
@@ -50,21 +50,12 @@ const TileLink = styled.a`
   }
 `;
 
-const LinkContainer = styled.div`
+export const LinkContainer = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 8px;
 `;
 
-const LinkDescription = styled.span`
+export const LinkDescription = styled.span`
   color: ${({ theme }) => theme.styles.fontSecondary};
 `;
-
-export {
-  StyledTile,
-  TileTitle,
-  TileDescription,
-  TileLink,
-  LinkContainer,
-  LinkDescription,
-};

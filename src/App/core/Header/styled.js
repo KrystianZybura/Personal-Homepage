@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-const StyledHeader = styled.header`
+export const StyledHeader = styled.header`
   display: grid;
   grid-template-columns: auto 1fr;
   margin-top: 119px;
@@ -11,5 +11,3 @@ const StyledHeader = styled.header`
     margin-top: 32px;
   }
 `;
-
-export { StyledHeader };

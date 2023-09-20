@@ -1,4 +1,4 @@
-const skills = [
+export const skills = [
   "Semantic & accessible HTML",
   "Responsive Web Design",
   "JavaScript (ES6 + Features)",
@@ -21,5 +21,3 @@ const skills = [
   "NPM & PNPM",
   "Styled-Components",
 ];
-
-export { skills };

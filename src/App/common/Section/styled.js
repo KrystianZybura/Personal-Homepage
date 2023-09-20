@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-const StyledSection = styled.section`
+export const StyledSection = styled.section`
   background: ${({ theme }) => theme.styles.sectionBackground};
   box-shadow:
     0px 16px 58px 0px ${({ theme }) => theme.styles.firstBoxShadow},
@@ -14,7 +14,7 @@ const StyledSection = styled.section`
   }
 `;
 
-const SectionHeader = styled.h2`
+export const SectionHeader = styled.h2`
   font-size: 30px;
   font-weight: 900;
   padding-bottom: 15px;
@@ -28,7 +28,7 @@ const SectionHeader = styled.h2`
   }
 `;
 
-const SectionUl = styled.ul`
+export const SectionUl = styled.ul`
   list-style-image: url(${({ $listStyleUrl }) => $listStyleUrl});
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -46,8 +46,6 @@ const SectionUl = styled.ul`
   }
 `;
 
-const SectionLi = styled.li`
+export const SectionLi = styled.li`
   padding-left: 8px;
 `;
-
-export { SectionUl, SectionLi, StyledSection, SectionHeader };

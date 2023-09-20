@@ -1,6 +1,6 @@
 import { keyframes, styled } from "styled-components";
 
-const spinAnimation = keyframes`
+export const spinAnimation = keyframes`
   0% {
     transform: rotate(0deg);
   }
@@ -10,7 +10,7 @@ const spinAnimation = keyframes`
   }
 `;
 
-const LoadingContainer = styled.div`
+export const LoadingContainer = styled.div`
   display: grid;
   place-items: center;
   grid-gap: 48px;
@@ -18,12 +18,12 @@ const LoadingContainer = styled.div`
   margin: 64px 0 140px;
 `;
 
-const LoadingText = styled.p`
+export const LoadingText = styled.p`
   font-size: 20px;
   color: #252525;
 `;
 
-const LoadingAnimation = styled.div`
+export const LoadingAnimation = styled.div`
   width: 160px;
   height: 160px;
   border: 11px solid ${({ theme }) => theme.styles.border};
@@ -33,5 +33,3 @@ const LoadingAnimation = styled.div`
     ${spinAnimation} 0.75s infinite,
     linear;
 `;
-
-export { LoadingAnimation, LoadingContainer, LoadingText };

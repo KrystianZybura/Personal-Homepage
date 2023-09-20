@@ -1,21 +1,21 @@
 import { styled } from "styled-components";
 
-const ErrorWrapper = styled.div`
+export const ErrorWrapper = styled.div`
   text-align: center;
   margin: 64px 0 140px;
 `;
 
-const ErrorHeading = styled.h3`
+export const ErrorHeading = styled.h3`
   font-size: 24px;
   font-weight: 700;
 `;
 
-const ErrorMessage = styled.p`
+export const ErrorMessage = styled.p`
   font-size: 20px;
   line-height: 28px;
 `;
 
-const ErrorLink = styled.a`
+export const ErrorLink = styled.a`
   padding: 12px 16px;
   border: 1px solid ${({ theme }) => theme.styles.border};
   border-radius: 5px;
@@ -35,5 +35,3 @@ const ErrorLink = styled.a`
       2px -2px 0px 0px ${({ theme }) => theme.styles.buttonBoxShadow};
   }
 `;
-
-export { ErrorWrapper, ErrorHeading, ErrorLink, ErrorMessage };

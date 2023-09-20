@@ -2,7 +2,7 @@ import { useContext } from "react";
 
 import { ThemeContext } from "../ThemeStatus";
 
-const useTheme = () => {
+export const useTheme = () => {
   const darkTheme = useContext(ThemeContext);
 
   return {
@@ -25,5 +25,3 @@ const useTheme = () => {
     },
   };
 };
-
-export { useTheme };
