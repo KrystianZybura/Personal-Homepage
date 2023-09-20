@@ -1,11 +1,11 @@
 import Hero from "./Hero";
-import ToggleTheme from "./ToggleTheme";
+import SwitchTheme from "./SwitchTheme";
 import { StyledHeader } from "./styled";
 
-const Header = ({ toggleDark }) => (
+const Header = () => (
   <StyledHeader>
     <Hero name={"Krystian Żybura"} />
-    <ToggleTheme toggleDark={toggleDark} />
+    <SwitchTheme />
   </StyledHeader>
 );
 

@@ -1,23 +1,17 @@
-import { useState } from "react";
 import { ThemeProvider } from "styled-components";
 
 import GlobalStyles from "./GlobalStyles.js";
 import PersonalHomepage from "./core";
-import { getTheme } from "./getTheme.js";
+import { useTheme } from "./useTheme.js";
 
 const App = () => {
-  const [darkTheme, setDarkTheme] = useState(false);
-
-  const toggleDarkTheme = () => setDarkTheme((darkTheme) => !darkTheme);
-
-  const theme = getTheme(darkTheme ? darkTheme : false);
+  const theme = useTheme();
 
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <PersonalHomepage toggleDark={toggleDarkTheme} />
+      <PersonalHomepage />
     </ThemeProvider>
   );
 };
-
 export default App;
