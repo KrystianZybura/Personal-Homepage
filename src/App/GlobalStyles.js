@@ -1,6 +1,6 @@
-import { createGlobalStyle, css } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
-const GlobalStyles = createGlobalStyle`${css`
+const GlobalStyles = createGlobalStyle`
   html {
     box-sizing: border-box;
 
@@ -25,6 +25,6 @@ const GlobalStyles = createGlobalStyle`${css`
       font-size: 14px;
     }
   }
-`}`;
+`;
 
 export default GlobalStyles;
