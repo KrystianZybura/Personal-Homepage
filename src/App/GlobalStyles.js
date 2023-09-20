@@ -19,6 +19,7 @@ const GlobalStyles = createGlobalStyle`${css`
     padding: 0 16px;
     font-size: 18px;
     color: ${({ theme }) => theme.styles.font};
+    transition: background 0.5s;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
       font-size: 14px;
