@@ -1,5 +1,10 @@
 import { ReactComponent as ErrorIcon } from "../../../assets/danger.svg";
-import { ErrorHeading, ErrorLink, ErrorMessage, ErrorWrapper } from "./styled";
+import {
+  EmergencyLink,
+  ErrorHeading,
+  ErrorMessage,
+  ErrorWrapper,
+} from "./styled";
 
 const Error = () => (
   <ErrorWrapper>
@@ -10,13 +15,13 @@ const Error = () => (
       <br />
       You can check them directly on Github.
     </ErrorMessage>
-    <ErrorLink
+    <EmergencyLink
       rel="no-referrer"
       target="_blank"
       href={"https://github.com/KrystianZybura"}
     >
       Go to Github
-    </ErrorLink>
+    </EmergencyLink>
   </ErrorWrapper>
 );
 

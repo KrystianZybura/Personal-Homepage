@@ -15,7 +15,7 @@ export const ErrorMessage = styled.p`
   line-height: 28px;
 `;
 
-export const ErrorLink = styled.a`
+export const EmergencyLink = styled.a`
   padding: 12px 16px;
   border: 1px solid ${({ theme }) => theme.styles.border};
   border-radius: 5px;
