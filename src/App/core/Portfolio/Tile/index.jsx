@@ -1,10 +1,10 @@
 import {
+  Description,
+  Link,
   LinkContainer,
   LinkDescription,
-  StyledTile,
-  TileDescription,
-  TileLink,
-  TileTitle,
+  Title,
+  Wrapper,
 } from "./styled";
 
 const Tile = ({ repos }) => (
@@ -12,20 +12,20 @@ const Tile = ({ repos }) => (
     {repos.map(
       ({ name, description, html_url, homepage }) =>
         homepage && (
-          <StyledTile key={name}>
-            <TileTitle>{name}</TileTitle>
-            <TileDescription>{description}</TileDescription>
+          <Wrapper key={name}>
+            <Title>{name}</Title>
+            <Description>{description}</Description>
             <LinkContainer>
               <LinkDescription>Demo:</LinkDescription>
-              <TileLink rel="no-referrer" target="_blank" href={homepage}>
+              <Link rel="no-referrer" target="_blank" href={homepage}>
                 https://link.demo.com
-              </TileLink>
+              </Link>
               <LinkDescription>Code:</LinkDescription>
-              <TileLink rel="no-referrer" target="_blank" href={html_url}>
+              <Link rel="no-referrer" target="_blank" href={html_url}>
                 https://link.code.com
-              </TileLink>
+              </Link>
             </LinkContainer>
-          </StyledTile>
+          </Wrapper>
         ),
     )}
   </>

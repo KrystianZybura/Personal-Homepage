@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-export const StyledTile = styled.div`
+export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -23,7 +23,7 @@ export const StyledTile = styled.div`
   }
 `;
 
-export const TileTitle = styled.h3`
+export const Title = styled.h3`
   font-size: 24px;
   font-weight: 700;
   color: ${({ theme }) => theme.styles.primary};
@@ -34,11 +34,11 @@ export const TileTitle = styled.h3`
   }
 `;
 
-export const TileDescription = styled.div`
+export const Description = styled.div`
   color: ${({ theme }) => theme.styles.fontSecondary};
 `;
 
-export const TileLink = styled.a`
+export const Link = styled.a`
   color: ${({ theme }) => theme.styles.primary};
   text-decoration: none;
   border-bottom: 1px solid currentColor;
