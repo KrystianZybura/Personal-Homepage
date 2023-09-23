@@ -1,13 +1,7 @@
 import Error from "./Error";
 import Loading from "./Loading";
 import Tile from "./Tile";
-import {
-  PortfolioHeader,
-  PortfolioLogo,
-  PortfolioProjects,
-  PortfolioSubTitle,
-  PortfolioTitle,
-} from "./styled";
+import { GithubLogo, Heading, Projects, Subtitle, Title } from "./styled";
 import { useReposData } from "./useReposData";
 
 const Portfolio = ({ title, subtitle }) => {
@@ -15,16 +9,16 @@ const Portfolio = ({ title, subtitle }) => {
 
   return (
     <>
-      <PortfolioHeader>
-        <PortfolioLogo />
-        <PortfolioTitle>{title}</PortfolioTitle>
-        <PortfolioSubTitle>{subtitle}</PortfolioSubTitle>
-      </PortfolioHeader>
-      <PortfolioProjects $status={status}>
+      <Heading>
+        <GithubLogo />
+        <Title>{title}</Title>
+        <Subtitle>{subtitle}</Subtitle>
+      </Heading>
+      <Projects $status={status}>
         {status === "loading" && <Loading />}
         {status === "success" && <Tile repos={repos} />}
         {status === "error" && <Error />}
-      </PortfolioProjects>
+      </Projects>
     </>
   );
 };
