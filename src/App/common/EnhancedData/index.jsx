@@ -1,11 +1,11 @@
-import { Description, Heading, Socials, Title } from "./styled";
+import { Description, Heading } from "./styled";
 
-const EnhancedData = ({ heading, title, description, socials }) => (
+const EnhancedData = ({ heading, title, description, socials, footer }) => (
   <>
     <Heading>{heading}</Heading>
-    <Title>{title}</Title>
-    <Description>{description}</Description>
-    <Socials>{socials}</Socials>
+    {title}
+    <Description $footer={footer}>{description}</Description>
+    {socials}
   </>
 );
 
