@@ -5,14 +5,14 @@ import {
   HeroAbout,
   HeroHire,
   HeroImage,
+  HeroIntroduction,
   HeroTitle,
-  HeroWrapper,
 } from "./styled";
 
 const Hero = ({ name }) => (
   <>
     <HeroImage src={heroImageUrl} alt={`Photo of ${name}`} />
-    <HeroWrapper>
+    <HeroIntroduction>
       <Initiation>This is</Initiation>
       <HeroTitle>{name}</HeroTitle>
       <HeroAbout>
@@ -23,7 +23,7 @@ const Hero = ({ name }) => (
         <EmailIcon />
         Hire Me
       </HeroHire>
-    </HeroWrapper>
+    </HeroIntroduction>
   </>
 );
 

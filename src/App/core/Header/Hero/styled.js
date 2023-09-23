@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-export const HeroWrapper = styled.div`
+export const HeroIntroduction = styled.div`
   max-width: 633px;
   display: flex;
   flex-direction: column;
