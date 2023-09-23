@@ -1,14 +1,15 @@
+import Section from "../common/Section";
 import Footer from "./Footer";
-import FutureDevelopment from "./FutureDevelopment";
 import Header from "./Header";
 import Portfolio from "./Portfolio";
-import Skillset from "./Skillset";
+import { skills } from "./skills";
+import { skillsToLearn } from "./skillsToLearn";
 
 const PersonalHomepage = () => (
   <>
     <Header />
-    <Skillset />
-    <FutureDevelopment />
+    <Section title={"My skillset includes 🛠"} body={skills} />
+    <Section title={"What I want to learn next 🚀"} body={skillsToLearn} />
     <Portfolio />
     <Footer />
   </>
