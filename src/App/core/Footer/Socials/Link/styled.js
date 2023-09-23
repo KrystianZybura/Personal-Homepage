@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-export const StyledFooterLink = styled.a`
+export const StyledLink = styled.a`
   color: inherit;
 
   &:hover {
