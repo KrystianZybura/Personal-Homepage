@@ -10,15 +10,15 @@ import {
 } from "./styled";
 import { useReposData } from "./useReposData";
 
-const Portfolio = () => {
+const Portfolio = ({ title, subtitle }) => {
   const { status, repos } = useReposData();
 
   return (
     <>
       <PortfolioHeader>
         <PortfolioLogo />
-        <PortfolioTitle>Portfolio</PortfolioTitle>
-        <PortfolioSubTitle>My recent projects</PortfolioSubTitle>
+        <PortfolioTitle>{title}</PortfolioTitle>
+        <PortfolioSubTitle>{subtitle}</PortfolioSubTitle>
       </PortfolioHeader>
       <PortfolioProjects $status={status}>
         {status === "loading" && <Loading />}

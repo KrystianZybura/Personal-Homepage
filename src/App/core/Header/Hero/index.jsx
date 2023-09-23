@@ -5,12 +5,12 @@ import { Name } from "./Name";
 import { about } from "./about";
 import { HeroImage, HeroIntroduction } from "./styled";
 
-const Hero = ({ name }) => (
+const Hero = ({ name, heading }) => (
   <>
     <HeroImage src={heroImageUrl} alt={`Photo of ${name}`} />
     <HeroIntroduction>
       <EnhancedData
-        heading="This is"
+        heading={heading}
         title={<Name>{name}</Name>}
         description={about}
         socials={<HireMe />}

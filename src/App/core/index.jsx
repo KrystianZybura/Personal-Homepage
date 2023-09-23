@@ -7,11 +7,11 @@ import { skillsToLearn } from "./skillsToLearn";
 
 const PersonalHomepage = () => (
   <>
-    <Header />
+    <Header name={"Krystian Żybura"} heading={"This is"} />
     <Section title={"My skillset includes 🛠"} body={skills} />
     <Section title={"What I want to learn next 🚀"} body={skillsToLearn} />
-    <Portfolio />
-    <Footer />
+    <Portfolio title={"Portfolio"} subtitle={"My recent projects"} />
+    <Footer heading={"Let's talk!"} />
   </>
 );
 

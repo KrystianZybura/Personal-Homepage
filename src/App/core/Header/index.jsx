@@ -2,9 +2,9 @@ import Hero from "./Hero";
 import SwitchTheme from "./SwitchTheme";
 import { StyledHeader } from "./styled";
 
-const Header = () => (
+const Header = ({ name, heading }) => (
   <StyledHeader>
-    <Hero name={"Krystian Żybura"} />
+    <Hero name={name} heading={heading} />
     <SwitchTheme />
   </StyledHeader>
 );

@@ -4,10 +4,10 @@ import Socials from "./Socials";
 import { description } from "./description";
 import { StyledFooter } from "./styled";
 
-const Footer = () => (
+const Footer = ({ heading }) => (
   <StyledFooter>
     <EnhancedData
-      heading="Let's talk!"
+      heading={heading}
       title={<Email />}
       description={description}
       socials={<Socials />}
