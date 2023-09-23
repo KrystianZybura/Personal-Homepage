@@ -10,7 +10,7 @@ export const spinAnimation = keyframes`
   }
 `;
 
-export const LoadingContainer = styled.div`
+export const LoadingWrapper = styled.div`
   display: grid;
   place-items: center;
   grid-gap: 48px;

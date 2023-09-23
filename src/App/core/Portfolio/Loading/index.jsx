@@ -1,10 +1,10 @@
-import { LoadingAnimation, LoadingContainer, LoadingText } from "./styled";
+import { LoadingAnimation, LoadingText, LoadingWrapper } from "./styled";
 
 const Loading = () => (
-  <LoadingContainer>
+  <LoadingWrapper>
     <LoadingText>Please wait, projects are being loaded...</LoadingText>
     <LoadingAnimation />
-  </LoadingContainer>
+  </LoadingWrapper>
 );
 
 export default Loading;
