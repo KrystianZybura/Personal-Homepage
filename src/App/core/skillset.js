@@ -1,4 +1,4 @@
-export const skills = [
+export const skillset = [
   "Semantic & accessible HTML",
   "React",
   "Responsive Web Design",
