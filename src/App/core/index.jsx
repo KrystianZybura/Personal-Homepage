@@ -1,9 +1,9 @@
 import Section from "../common/Section";
+import { skillsToLearn } from "./Data/skillsToLearn";
+import { skillset } from "./Data/skillset";
 import Footer from "./Footer";
 import Header from "./Header";
 import Portfolio from "./Portfolio";
-import { skillsToLearn } from "./skillsToLearn";
-import { skillset } from "./skillset";
 
 const PersonalHomepage = () => (
   <>
