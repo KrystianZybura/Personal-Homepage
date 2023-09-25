@@ -1,17 +1,5 @@
 import { styled } from "styled-components";
 
-export const Introduction = styled.div`
-  max-width: 633px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 32px;
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-    gap: 16px;
-  }
-`;
-
 export const Image = styled.img`
   width: 400px;
   border-radius: 50%;
