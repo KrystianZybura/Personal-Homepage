@@ -12,6 +12,7 @@ const Hero = ({ name, heading }) => (
       title={<Name>{name}</Name>}
       description={about}
       socials={<HireMe />}
+      hero
     />
   </>
 );

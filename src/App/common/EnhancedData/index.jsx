@@ -1,9 +1,16 @@
-import { Description, EnhancedDataWrapper, Heading } from "./styled";
+import { Description, EnhancedDataWrapper, Heading, Title } from "./styled";
 
-const EnhancedData = ({ heading, title, description, socials, footer }) => (
+const EnhancedData = ({
+  heading,
+  title,
+  description,
+  socials,
+  footer,
+  hero,
+}) => (
   <EnhancedDataWrapper $footer={footer}>
     <Heading>{heading}</Heading>
-    {title}
+    <Title $hero={hero}>{title}</Title>
     <Description $footer={footer}>{description}</Description>
     {socials}
   </EnhancedDataWrapper>

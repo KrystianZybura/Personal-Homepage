@@ -30,6 +30,14 @@ export const Heading = styled.span`
   color: ${({ theme }) => theme.styles.fontSecondary};
 `;
 
+export const Title = styled.div`
+  ${({ $hero }) =>
+    $hero &&
+    css`
+      margin: -20px 0 3px;
+    `}
+`;
+
 export const Description = styled.article`
   font-size: 20px;
   line-height: 28px;
