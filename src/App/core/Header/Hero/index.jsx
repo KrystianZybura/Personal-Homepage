@@ -2,19 +2,19 @@ import heroImageUrl from "../../../assets/hero.png";
 import EnhancedData from "../../../common/EnhancedData";
 import HireMe from "./HireMe";
 import { about } from "./about";
-import { HeroImage, HeroIntroduction, Name } from "./styled";
+import { Image, Introduction, Name } from "./styled";
 
 const Hero = ({ name, heading }) => (
   <>
-    <HeroImage src={heroImageUrl} alt={`Photo of ${name}`} />
-    <HeroIntroduction>
+    <Image src={heroImageUrl} alt={`Photo of ${name}`} />
+    <Introduction>
       <EnhancedData
         heading={heading}
         title={<Name>{name}</Name>}
         description={about}
         socials={<HireMe />}
       />
-    </HeroIntroduction>
+    </Introduction>
   </>
 );
 

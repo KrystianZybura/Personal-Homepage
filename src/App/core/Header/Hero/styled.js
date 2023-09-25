@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-export const HeroIntroduction = styled.div`
+export const Introduction = styled.div`
   max-width: 633px;
   display: flex;
   flex-direction: column;
@@ -12,7 +12,7 @@ export const HeroIntroduction = styled.div`
   }
 `;
 
-export const HeroImage = styled.img`
+export const Image = styled.img`
   width: 400px;
   border-radius: 50%;
   aspect-ratio: 1;
