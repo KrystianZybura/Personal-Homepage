@@ -1,4 +1,5 @@
-import { Description, EnhancedDataWrapper, Heading, Title } from "./styled";
+import { Heading } from "../Heading";
+import { Description, EnhancedDataWrapper, Title } from "./styled";
 
 const EnhancedData = ({
   heading,
