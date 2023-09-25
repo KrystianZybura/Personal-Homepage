@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-export const StyledSection = styled.section`
+export const SectionWrapper = styled.section`
   background: ${({ theme }) => theme.styles.sectionBackground};
   box-shadow:
     0px 16px 58px 0px ${({ theme }) => theme.styles.firstBoxShadow},
