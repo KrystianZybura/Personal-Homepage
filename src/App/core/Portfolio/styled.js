@@ -5,12 +5,7 @@ import { ReactComponent as Logo } from "../../assets/github-logo.svg";
 export const Heading = styled.div`
   display: grid;
   place-items: center;
-  margin-top: 72px;
   grid-gap: 8px;
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-    margin-top: 48px;
-  }
 `;
 
 export const GithubLogo = styled(Logo)`

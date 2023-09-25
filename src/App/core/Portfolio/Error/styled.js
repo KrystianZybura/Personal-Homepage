@@ -2,7 +2,11 @@ import { styled } from "styled-components";
 
 export const ErrorWrapper = styled.div`
   text-align: center;
-  margin: 64px 0 140px;
+  margin-bottom: 68px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    margin: 0;
+  }
 `;
 
 export const ErrorHeading = styled.h3`

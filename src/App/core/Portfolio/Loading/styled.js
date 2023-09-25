@@ -15,7 +15,11 @@ export const LoadingWrapper = styled.div`
   place-items: center;
   grid-gap: 48px;
   height: 160px;
-  margin: 64px 0 140px;
+  margin-bottom: 140px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    width: 48px;
+  }
 `;
 
 export const LoadingText = styled.p`

@@ -6,7 +6,6 @@ export const StyledSection = styled.section`
     0px 16px 58px 0px ${({ theme }) => theme.styles.firstBoxShadow},
     0px -2px 50px 0px ${({ theme }) => theme.styles.secondBoxShadow};
   padding: 32px;
-  margin-top: 73px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     margin-top: 48px;
