@@ -8,7 +8,6 @@ export const SectionWrapper = styled.section`
   padding: 32px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-    margin-top: 48px;
     padding: 16px;
   }
 `;
