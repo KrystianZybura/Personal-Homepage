@@ -8,7 +8,7 @@ export const StyledHireMe = styled.a`
   max-width: 154px;
   padding: 12px 16px;
   border: 1px solid ${({ theme }) => theme.styles.border};
-  border-radius: 5px;
+  border-radius: 4px;
   font-weight: 600;
   font-size: 20px;
   background-color: ${({ theme }) => theme.styles.primary};
@@ -16,7 +16,7 @@ export const StyledHireMe = styled.a`
   text-decoration: none;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-    gap: 14px;
+    gap: 12px;
     font-size: 18px;
     max-width: 139px;
   }
