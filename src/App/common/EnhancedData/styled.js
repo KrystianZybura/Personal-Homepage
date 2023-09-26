@@ -28,6 +28,10 @@ export const Title = styled.div`
     $hero &&
     css`
       margin: -20px 0 3px;
+
+      @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        margin: -4px 0 4px;
+      }
     `}
 `;
 
