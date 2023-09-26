@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { useMediaQuery } from "react-responsive";
 
 import { ThemeContext, ThemeUpdateContext } from "../../../ThemeStatus";
 import { ReactComponent as DarkThemeIcon } from "../../assets/dark.svg";
@@ -10,9 +11,13 @@ const SwitchTheme = () => {
   const darkTheme = useContext(ThemeContext);
   const toggleTheme = useContext(ThemeUpdateContext);
 
+  const isMobile = useMediaQuery({ maxWidth: 450 });
+
   return (
     <SwitchThemeContainer>
-      <Heading>Dark mode {darkTheme ? "on" : "off"}</Heading>
+      <Heading>
+        {isMobile ? "" : `Dark mode ${darkTheme ? "on" : "off"}`}
+      </Heading>
       <SwitchThemeButton onClick={() => toggleTheme()}>
         {darkTheme ? <DarkThemeIcon /> : <LightThemeIcon />}
       </SwitchThemeButton>
