@@ -1,7 +1,8 @@
+import { Title } from "../../common/Title";
 import Error from "./Error";
 import Loading from "./Loading";
 import Tile from "./Tile";
-import { GithubLogo, Heading, Projects, Subtitle, Title } from "./styled";
+import { GithubLogo, Heading, Projects, Subtitle } from "./styled";
 import { useReposData } from "./useReposData";
 
 const Portfolio = ({ title, subtitle }) => {

@@ -16,20 +16,6 @@ export const SectionWrapper = styled.section`
   }
 `;
 
-export const Title = styled.h2`
-  font-size: 30px;
-  font-weight: 900;
-  padding-bottom: 15px;
-  margin-bottom: 25px;
-  border-bottom: 1px solid ${({ theme }) => theme.styles.border};
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-    padding-bottom: 12px;
-    font-size: 18px;
-    margin-bottom: 25px;
-  }
-`;
-
 export const List = styled.ul`
   list-style-image: url(${({ $listStyleUrl }) => $listStyleUrl});
   display: grid;
