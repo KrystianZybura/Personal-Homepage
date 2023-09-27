@@ -1,9 +1,9 @@
 import { styled } from "styled-components";
 
-export const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+export const TileWrapper = styled.div`
+  display: grid;
+  grid-template-rows: min-content;
+  grid-gap: 24px;
   background: ${({ theme }) => theme.styles.sectionBackground};
   border: 6px solid ${({ theme }) => theme.styles.border};
   border-radius: 4px;
@@ -35,7 +35,15 @@ export const Title = styled.h3`
 `;
 
 export const Description = styled.div`
+  align-self: flex-start;
   color: ${({ theme }) => theme.styles.fontSecondary};
+`;
+
+export const LinkContainer = styled.div`
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px;
+  align-self: end;
 `;
 
 export const Link = styled.a`
@@ -50,12 +58,7 @@ export const Link = styled.a`
   }
 `;
 
-export const LinkContainer = styled.div`
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 8px;
-`;
-
 export const LinkDescription = styled.span`
   color: ${({ theme }) => theme.styles.fontSecondary};
+  align-self: center;
 `;

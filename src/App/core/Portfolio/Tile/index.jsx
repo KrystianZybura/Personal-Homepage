@@ -3,8 +3,8 @@ import {
   Link,
   LinkContainer,
   LinkDescription,
+  TileWrapper,
   Title,
-  Wrapper,
 } from "./styled";
 
 const Tile = ({ repos }) => (
@@ -12,7 +12,7 @@ const Tile = ({ repos }) => (
     {repos.map(
       ({ name, description, html_url, homepage }) =>
         homepage && (
-          <Wrapper key={name}>
+          <TileWrapper key={name}>
             <Title>{name}</Title>
             <Description>{description}</Description>
             <LinkContainer>
@@ -25,7 +25,7 @@ const Tile = ({ repos }) => (
                 https://link.code.com
               </Link>
             </LinkContainer>
-          </Wrapper>
+          </TileWrapper>
         ),
     )}
   </>
