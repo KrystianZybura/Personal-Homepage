@@ -55,12 +55,12 @@ export const Description = styled.article`
   line-height: 28px;
   color: ${({ theme }) => theme.styles.fontSecondary};
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
-    font-size: 18px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    font-size: 19px;
     margin-right: 30px;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: 17px;
     line-height: 24px;
     margin: 0;
