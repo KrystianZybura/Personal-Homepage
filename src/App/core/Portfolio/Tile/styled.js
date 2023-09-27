@@ -3,6 +3,7 @@ import { styled } from "styled-components";
 export const TileWrapper = styled.div`
   display: grid;
   grid-template-rows: min-content;
+  align-content: center;
   grid-gap: 24px;
   background: ${({ theme }) => theme.styles.sectionBackground};
   border: 6px solid ${({ theme }) => theme.styles.border};
@@ -50,7 +51,6 @@ export const LinksContainer = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 8px;
-  align-self: end;
 `;
 
 export const Link = styled.a`
