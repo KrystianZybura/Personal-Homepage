@@ -16,8 +16,8 @@ const Portfolio = ({ title, subtitle }) => {
       </Heading>
       <Projects $status={status}>
         {status === "loading" && <Loading />}
-        {status === "success" && <Tile repos={repos} />}
         {status === "error" && <Error />}
+        {status === "success" && <Tile repos={repos} />}
       </Projects>
     </>
   );
