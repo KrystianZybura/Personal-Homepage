@@ -8,6 +8,11 @@ export const Layout = styled.div`
   padding: 0 20px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    grid-gap: 60px;
+    margin: 60px auto 70px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     grid-gap: 48px;
     margin: 32px auto 31px;
   }

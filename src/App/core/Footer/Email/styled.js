@@ -8,6 +8,10 @@ export const StyledEmail = styled.a`
   color: inherit;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    font-size: 26px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: 18px;
   }
 
