@@ -17,7 +17,6 @@ export const TileWrapper = styled.div`
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
-    grid-gap: 21px;
     padding: 40px;
   }
 
@@ -33,7 +32,7 @@ export const Title = styled.h3`
   color: ${({ theme }) => theme.styles.primary};
   margin: 0px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     font-size: 22px;
   }
 

@@ -48,7 +48,7 @@ export const Name = styled.h1`
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-    font-size: 26px;
+    font-size: 30px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
