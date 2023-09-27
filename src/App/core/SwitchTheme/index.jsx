@@ -11,7 +11,7 @@ const SwitchTheme = () => {
   const darkTheme = useContext(ThemeContext);
   const toggleTheme = useContext(ThemeUpdateContext);
 
-  const isMobile = useMediaQuery({ maxWidth: 450 });
+  const isMobile = useMediaQuery({ maxWidth: 767 });
 
   return (
     <SwitchThemeContainer>
