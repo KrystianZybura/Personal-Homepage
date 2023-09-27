@@ -13,6 +13,10 @@ export const GithubLogo = styled(Logo)`
   margin-bottom: 4px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    width: 38px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width: 32px;
   }
 `;
@@ -21,6 +25,10 @@ export const Subtitle = styled.span`
   font-size: 20px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    font-size: 18px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: 17px;
   }
 `;
@@ -37,7 +45,11 @@ export const Projects = styled.div`
       place-items: center;
     `}
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
+    grid-gap: 24px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     grid-template-columns: 1fr;
     grid-gap: 16px;
   }
