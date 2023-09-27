@@ -16,7 +16,7 @@ export const SectionWrapper = styled.section`
   }
 `;
 
-export const SectionHeader = styled.h2`
+export const Title = styled.h2`
   font-size: 30px;
   font-weight: 900;
   padding-bottom: 15px;
@@ -30,7 +30,7 @@ export const SectionHeader = styled.h2`
   }
 `;
 
-export const SectionUl = styled.ul`
+export const List = styled.ul`
   list-style-image: url(${({ $listStyleUrl }) => $listStyleUrl});
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -48,6 +48,6 @@ export const SectionUl = styled.ul`
   }
 `;
 
-export const SectionLi = styled.li`
+export const Item = styled.li`
   padding-left: 8px;
 `;

@@ -1,14 +1,14 @@
 import listStyleImageUrl from "../../assets/list-style.svg";
-import { SectionHeader, SectionLi, SectionUl, SectionWrapper } from "./styled";
+import { Item, List, SectionWrapper, Title } from "./styled";
 
 const Section = ({ title, body }) => (
   <SectionWrapper>
-    <SectionHeader>{title}</SectionHeader>
-    <SectionUl $listStyleUrl={listStyleImageUrl}>
+    <Title>{title}</Title>
+    <List $listStyleUrl={listStyleImageUrl}>
       {body.map((skill) => (
-        <SectionLi key={skill}>{skill}</SectionLi>
+        <Item key={skill}>{skill}</Item>
       ))}
-    </SectionUl>
+    </List>
   </SectionWrapper>
 );
 
