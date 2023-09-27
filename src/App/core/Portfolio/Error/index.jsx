@@ -1,7 +1,7 @@
-import { ReactComponent as ErrorIcon } from "../../../assets/danger.svg";
 import {
   EmergencyLink,
   ErrorHeading,
+  ErrorIcon,
   ErrorMessage,
   ErrorWrapper,
 } from "./styled";
