@@ -8,6 +8,10 @@ export const SectionWrapper = styled.section`
   padding: 32px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    padding: 24px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     padding: 16px;
   }
 `;
@@ -35,11 +39,11 @@ export const SectionUl = styled.ul`
   padding-left: 15px;
   color: ${({ theme }) => theme.styles.fontSecondary};
 
-  @media (max-width: 1100px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     grid-template-columns: 1fr;
   }
 `;
