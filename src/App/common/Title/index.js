@@ -6,6 +6,10 @@ export const Title = styled.h2`
   margin: 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    font-size: 24px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: 18px;
   }
 
