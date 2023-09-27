@@ -19,6 +19,14 @@ export const StyledHireMe = styled.a`
     gap: 12px;
     font-size: 18px;
     max-width: 139px;
+    align-self: center;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    gap: 12px;
+    font-size: 18px;
+    max-width: 139px;
+    align-self: unset;
   }
 
   &:hover {

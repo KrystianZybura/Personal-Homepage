@@ -9,7 +9,7 @@ const EnhancedData = ({
   footer,
   hero,
 }) => (
-  <EnhancedDataWrapper $footer={footer}>
+  <EnhancedDataWrapper $hero={hero} $footer={footer}>
     <Heading>{heading}</Heading>
     <Title $hero={hero}>{title}</Title>
     <Description $footer={footer}>{description}</Description>

@@ -21,6 +21,18 @@ export const EnhancedDataWrapper = styled.div`
         margin: 0;
       }
     `}
+
+  ${({ $hero }) =>
+    $hero &&
+    css`
+      @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        text-align: center;
+      }
+
+      @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        text-align: unset;
+      }
+    `}
 `;
 
 export const Title = styled.div`
@@ -40,14 +52,21 @@ export const Description = styled.article`
   line-height: 28px;
   color: ${({ theme }) => theme.styles.fontSecondary};
 
-  ${({ $footer }) =>
-    $footer &&
-    css`
-      max-width: 670px;
-    `}
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
+    font-size: 18px;
+    margin-right: 30px;
+  }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     font-size: 17px;
     line-height: 24px;
+    margin: 0;
   }
+
+  ${({ $footer }) =>
+    $footer &&
+    css`
+      max-width: 670px;
+      margin: 0;
+    `}
 `;

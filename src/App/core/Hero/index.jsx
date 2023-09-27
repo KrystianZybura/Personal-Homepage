@@ -2,10 +2,10 @@ import heroImageUrl from "../../assets/hero.png";
 import EnhancedData from "../../common/EnhancedData";
 import HireMe from "./HireMe";
 import { about } from "./about";
-import { Image, Name } from "./styled";
+import { HeroWrapper, Image, Name } from "./styled";
 
 const Hero = ({ name, heading }) => (
-  <>
+  <HeroWrapper>
     <Image src={heroImageUrl} alt={`Photo of ${name}`} />
     <EnhancedData
       heading={heading}
@@ -14,7 +14,7 @@ const Hero = ({ name, heading }) => (
       socials={<HireMe />}
       hero
     />
-  </>
+  </HeroWrapper>
 );
 
 export default Hero;
