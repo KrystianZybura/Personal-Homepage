@@ -16,7 +16,7 @@ export const TileWrapper = styled.div`
     border-color: ${({ theme }) => theme.styles.borderHover};
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     gap: 16px;
     padding: 24px;
     max-width: 100%;
@@ -39,7 +39,7 @@ export const Description = styled.div`
   color: ${({ theme }) => theme.styles.fontSecondary};
 `;
 
-export const LinkContainer = styled.div`
+export const LinksContainer = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 8px;

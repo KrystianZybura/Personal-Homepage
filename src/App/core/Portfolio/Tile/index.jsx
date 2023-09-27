@@ -1,8 +1,8 @@
 import {
   Description,
   Link,
-  LinkContainer,
   LinkDescription,
+  LinksContainer,
   TileWrapper,
   Title,
 } from "./styled";
@@ -15,7 +15,7 @@ const Tile = ({ repos }) => (
           <TileWrapper key={name}>
             <Title>{name}</Title>
             <Description>{description}</Description>
-            <LinkContainer>
+            <LinksContainer>
               <LinkDescription>Demo:</LinkDescription>
               <Link rel="no-referrer" target="_blank" href={homepage}>
                 https://link.demo.com
@@ -24,7 +24,7 @@ const Tile = ({ repos }) => (
               <Link rel="no-referrer" target="_blank" href={html_url}>
                 https://link.code.com
               </Link>
-            </LinkContainer>
+            </LinksContainer>
           </TileWrapper>
         ),
     )}
