@@ -37,6 +37,7 @@ export const Projects = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 32px;
+  margin-top: -30px;
 
   ${({ $status }) =>
     ($status === "loading" || $status === "error") &&
@@ -52,5 +53,6 @@ export const Projects = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     grid-template-columns: 1fr;
     grid-gap: 16px;
+    margin-top: -15px;
   }
 `;
