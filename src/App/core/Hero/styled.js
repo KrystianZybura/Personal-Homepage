@@ -44,10 +44,14 @@ export const Name = styled.h1`
   margin: 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
-    font-size: 26px;
+    font-size: 32px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    font-size: 26px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: 22px;
   }
 `;

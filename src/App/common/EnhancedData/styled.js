@@ -7,16 +7,19 @@ export const EnhancedDataWrapper = styled.div`
   gap: 32px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    gap: 24px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     gap: 16px;
   }
 
   ${({ $footer }) =>
     $footer &&
     css`
-      gap: 24px;
       margin-top: 48px;
 
-      @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+      @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         gap: 12px;
         margin: 0;
       }
