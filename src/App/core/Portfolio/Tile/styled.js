@@ -16,10 +16,14 @@ export const TileWrapper = styled.div`
     border-color: ${({ theme }) => theme.styles.borderHover};
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
+    grid-gap: 21px;
+    padding: 40px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     gap: 16px;
     padding: 24px;
-    max-width: 100%;
   }
 `;
 
@@ -29,7 +33,11 @@ export const Title = styled.h3`
   color: ${({ theme }) => theme.styles.primary};
   margin: 0px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
+    font-size: 22px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: 16px;
   }
 `;
