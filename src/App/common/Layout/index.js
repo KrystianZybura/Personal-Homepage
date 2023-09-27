@@ -4,8 +4,8 @@ export const Layout = styled.div`
   display: grid;
   grid-gap: 72px;
   margin: 119px auto 109px;
-  max-width: 1232px;
-  padding: 0 16px;
+  max-width: 1240px;
+  padding: 0 20px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     grid-gap: 48px;
