@@ -21,7 +21,7 @@ export const useTheme = () => {
     breakpoints: {
       laptop: "1200px",
       tablet: "767px",
-      mobile: "550px",
+      mobile: "450px",
     },
   };
 };
