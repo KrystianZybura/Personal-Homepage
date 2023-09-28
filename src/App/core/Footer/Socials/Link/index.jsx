@@ -1,9 +1,7 @@
 import { StyledLink } from "./styled";
 
-const Link = ({ href, children }) => (
-  <StyledLink rel="no-referrer" target="_blank" href={href}>
-    {children}
-  </StyledLink>
+const Link = ({ href }) => (
+  <StyledLink rel="no-referrer" target="_blank" href={href} />
 );
 
 export default Link;
