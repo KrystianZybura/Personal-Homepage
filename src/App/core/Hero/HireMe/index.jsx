@@ -1,11 +1,11 @@
+import Link from "../../../common/Link";
 import { ReactComponent as EmailIcon } from "./emailIcon.svg";
-import { StyledHireMe } from "./styled";
 
 const HireMe = () => (
-  <StyledHireMe href="mailto:zybura.dev@gmail.com">
+  <Link buttonLink href="mailto:zybura.dev@gmail.com">
     <EmailIcon />
     Hire Me
-  </StyledHireMe>
+  </Link>
 );
 
 export default HireMe;
