@@ -32,7 +32,6 @@ const GlobalStyles = createGlobalStyle`
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
       font-size: 14px;
       line-height: 17px;
-      
     }
   }
 `;
