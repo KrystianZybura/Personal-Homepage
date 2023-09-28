@@ -27,7 +27,8 @@ export const StyledLink = styled.a`
     $tile &&
     css`
       border-bottom: 1px solid;
-      justify-self: start;
+      padding-bottom: 1px;
+      word-break: break-word;
 
       &:hover {
         filter: brightness(120%);

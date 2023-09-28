@@ -1,7 +1,8 @@
 import Link from "../../../common/Link";
 import {
   Description,
-  LinkDescription,
+  LinkTo,
+  LinkWrapper,
   LinksContainer,
   TileWrapper,
   Title,
@@ -17,14 +18,18 @@ const Tile = ({ repos }) =>
           </Title>
           <Description>{description}</Description>
           <LinksContainer>
-            <LinkDescription>Demo:</LinkDescription>
-            <Link tile href={homepage}>
-              https://link.demo.com
-            </Link>
-            <LinkDescription>Code:</LinkDescription>
-            <Link tile href={html_url}>
-              https://link.code.com
-            </Link>
+            <LinkTo>Demo:</LinkTo>
+            <LinkWrapper>
+              <Link tile href={homepage}>
+                {homepage}
+              </Link>
+            </LinkWrapper>
+            <LinkTo>Code:</LinkTo>
+            <LinkWrapper>
+              <Link tile href={html_url}>
+                {html_url}
+              </Link>
+            </LinkWrapper>
           </LinksContainer>
         </TileWrapper>
       ),

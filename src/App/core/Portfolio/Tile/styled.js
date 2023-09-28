@@ -19,11 +19,18 @@ export const TileWrapper = styled.div`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
     padding: 40px;
+    font-size: 16px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
+    padding: 40px;
+    font-size: unset;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     gap: 16px;
     padding: 24px;
+    line-height: 22px;
   }
 `;
 
@@ -33,7 +40,7 @@ export const Title = styled.h3`
   color: ${({ theme }) => theme.styles.primary};
   margin: 0px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
     font-size: 22px;
   }
 
@@ -47,14 +54,30 @@ export const Description = styled.div`
   color: ${({ theme }) => theme.styles.fontSecondary};
 `;
 
-export const LinksContainer = styled.div`
+export const LinksContainer = styled.dl`
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 8px;
   color: ${({ theme }) => theme.styles.primary};
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
+    grid-template-columns: 1fr;
+    grid-row-gap: 4px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
+    grid-template-columns: auto 1fr;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
-export const LinkDescription = styled.span`
+export const LinkTo = styled.dt`
   color: ${({ theme }) => theme.styles.fontSecondary};
-  align-self: center;
+`;
+
+export const LinkWrapper = styled.dd`
+  margin: 0;
 `;
