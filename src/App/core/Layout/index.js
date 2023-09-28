@@ -7,12 +7,12 @@ export const Layout = styled.div`
   max-width: 1240px;
   padding: 0 20px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     grid-gap: 60px;
     margin: 60px auto 70px;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     grid-gap: 48px;
     margin: 32px auto 31px;
   }

@@ -6,11 +6,11 @@ export const EnhancedDataWrapper = styled.div`
   flex-flow: column wrap;
   gap: 32px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     gap: 24px;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     gap: 16px;
   }
 
@@ -19,7 +19,7 @@ export const EnhancedDataWrapper = styled.div`
     css`
       margin-top: 48px;
 
-      @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+      @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         gap: 12px;
         margin: 0;
       }
@@ -28,11 +28,11 @@ export const EnhancedDataWrapper = styled.div`
   ${({ $hero }) =>
     $hero &&
     css`
-      @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+      @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
         text-align: center;
       }
 
-      @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+      @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         text-align: unset;
       }
     `}
@@ -44,7 +44,7 @@ export const Title = styled.div`
     css`
       margin: -20px 0 3px;
 
-      @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+      @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
         margin: -4px 0 4px;
       }
     `}
@@ -55,12 +55,12 @@ export const Description = styled.article`
   line-height: 28px;
   color: ${({ theme }) => theme.styles.fontSecondary};
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     font-size: 19px;
     margin-right: 30px;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     font-size: 17px;
     line-height: 24px;
     margin: 0;

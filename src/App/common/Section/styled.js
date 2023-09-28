@@ -7,11 +7,11 @@ export const SectionWrapper = styled.section`
     0px -2px 50px 0px ${({ theme }) => theme.styles.secondBoxShadow};
   padding: 32px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     padding: 24px;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     padding: 16px;
   }
 `;
@@ -25,11 +25,11 @@ export const List = styled.ul`
   padding-left: 15px;
   color: ${({ theme }) => theme.styles.fontSecondary};
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     grid-template-columns: 1fr;
   }
 `;

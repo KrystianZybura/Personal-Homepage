@@ -18,15 +18,15 @@ const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.styles.font};
     transition: background 0.5s;
 
-    @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
       font-size: 17px;
     }
 
-    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
       font-size: 16px;
     }
 
-    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
       font-size: 14px;
     }
   }

@@ -19,9 +19,9 @@ export const useTheme = () => {
       buttonBoxShadow: darkTheme ? "#6D93BE" : "#8CC2FF",
     },
     breakpoints: {
-      laptop: "1200px",
-      tablet: "767px",
-      mobile: "450px",
+      laptop: 1200,
+      tablet: 767,
+      mobile: 450,
     },
   };
 };

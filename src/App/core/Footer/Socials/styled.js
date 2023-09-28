@@ -9,7 +9,7 @@ export const SocialsWrapper = styled.div`
   gap: 24px;
   margin-top: 32px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     gap: 16px;
     margin-top: 24px;
   }
@@ -18,11 +18,11 @@ export const SocialsWrapper = styled.div`
 export const createIcon = (svg) => styled(svg)`
   width: 48px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     width: 40px;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     width: 32px;
   }
 `;

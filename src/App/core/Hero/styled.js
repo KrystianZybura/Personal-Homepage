@@ -6,17 +6,17 @@ export const HeroWrapper = styled.div`
   align-items: center;
   grid-template-columns: 1fr 2fr;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
     grid-column-gap: 30px;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     place-items: center;
     grid-template-columns: 1fr;
     grid-gap: 0;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     grid-gap: 16px;
   }
 `;
@@ -27,11 +27,11 @@ export const Image = styled.img`
   border-radius: 50%;
   aspect-ratio: 1;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     padding: 40px;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     max-width: 132px;
     justify-self: start;
     padding: 0;
@@ -43,15 +43,15 @@ export const Name = styled.h1`
   font-weight: 900;
   margin: 0;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
     font-size: 32px;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     font-size: 30px;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     font-size: 22px;
   }
 `;

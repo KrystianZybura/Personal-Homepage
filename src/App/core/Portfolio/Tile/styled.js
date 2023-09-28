@@ -17,11 +17,11 @@ export const TileWrapper = styled.div`
     border-color: ${({ theme }) => theme.styles.borderHover};
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
     padding: 40px;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     gap: 16px;
     padding: 24px;
   }
@@ -33,11 +33,11 @@ export const Title = styled.h3`
   color: ${({ theme }) => theme.styles.primary};
   margin: 0px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     font-size: 22px;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     font-size: 16px;
   }
 `;

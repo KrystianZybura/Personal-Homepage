@@ -16,12 +16,12 @@ export const LoadingWrapper = styled.div`
   grid-gap: 48px;
   margin-bottom: 140px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     grid-gap: 25px;
     margin-bottom: 80px;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     grid-gap: 20px;
     margin-bottom: 50px;
   }
@@ -31,11 +31,11 @@ export const LoadingText = styled.p`
   font-size: 20px;
   color: #252525;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     font-size: 18px;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     font-size: unset;
   }
 `;
@@ -50,12 +50,12 @@ export const LoadingAnimation = styled.div`
     ${spinAnimation} 0.75s infinite,
     linear;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     width: 110px;
     height: 110px;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     border-width: 9px;
     width: 80px;
     height: 80px;

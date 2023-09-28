@@ -12,11 +12,11 @@ export const GithubLogo = styled(Logo)`
   color: ${({ theme }) => theme.styles.primary};
   margin-bottom: 4px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     width: 38px;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     width: 32px;
   }
 `;
@@ -24,11 +24,11 @@ export const GithubLogo = styled(Logo)`
 export const Subtitle = styled.span`
   font-size: 20px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     font-size: 18px;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     font-size: 17px;
   }
 `;
@@ -46,11 +46,11 @@ export const Projects = styled.div`
       place-items: center;
     `}
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
     grid-gap: 24px;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     grid-template-columns: 1fr;
     grid-gap: 16px;
     margin-top: -15px;

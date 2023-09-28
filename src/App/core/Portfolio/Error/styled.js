@@ -6,11 +6,11 @@ export const ErrorWrapper = styled.div`
   text-align: center;
   margin: 60px 0 68px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     margin: 20px 0 20px;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     margin: 0;
   }
 `;
@@ -19,11 +19,11 @@ export const ErrorHeading = styled.h3`
   font-size: 24px;
   font-weight: 700;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     font-size: 20px;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     font-size: 18px;
   }
 `;
@@ -32,17 +32,17 @@ export const ErrorMessage = styled.p`
   font-size: 20px;
   line-height: 28px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     font-size: unset;
   }
 `;
 
 export const ErrorIcon = styled(icon)`
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     width: 36px;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     width: 30px;
   }
 `;
@@ -59,12 +59,12 @@ export const EmergencyLink = styled.a`
   text-decoration: none;
   max-width: 168px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     font-size: 18px;
     padding: 10px 14px;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     font-size: 16px;
     padding: 8px 12px;
   }

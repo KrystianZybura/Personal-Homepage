@@ -15,14 +15,14 @@ export const StyledHireMe = styled.a`
   color: #fff;
   text-decoration: none;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     gap: 12px;
     font-size: 18px;
     max-width: 139px;
     align-self: center;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     gap: 12px;
     font-size: 18px;
     max-width: 139px;
