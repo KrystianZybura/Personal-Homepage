@@ -8,8 +8,9 @@ export const useTheme = () => {
   return {
     styles: {
       background: darkTheme ? "#252525" : "#FBFBFE",
-      fontSecondary: darkTheme ? "#FFFFFF" : "#6E7E91",
       font: darkTheme ? "#FFFFFF" : "#252525",
+      fontWhite: "#FFFFFF",
+      fontSecondary: darkTheme ? "#FFFFFF" : "#6E7E91",
       primary: darkTheme ? "#2188FF" : "#0366D6",
       sectionBackground: darkTheme ? "#363636B8" : "#FFFFFF",
       border: darkTheme ? "#D1D5DA1A" : "#D1D5DA4D",
