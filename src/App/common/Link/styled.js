@@ -28,7 +28,6 @@ export const StyledLink = styled.a`
     css`
       border-bottom: 1px solid ${({ theme }) => theme.styles.linkDecoration};
       padding-bottom: 2px;
-      word-break: break-word;
 
       &:hover {
         filter: brightness(120%);
