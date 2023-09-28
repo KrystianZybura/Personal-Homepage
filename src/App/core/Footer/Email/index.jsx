@@ -1,9 +1,9 @@
-import { StyledEmail } from "./styled";
+import Link from "../../../common/Link";
 
 const Email = () => (
-  <StyledEmail href="mailto:zybura.dev@gmail.com">
+  <Link email href="mailto:zybura.dev@gmail.com">
     zybura.dev@gmail.com
-  </StyledEmail>
+  </Link>
 );
 
 export default Email;
