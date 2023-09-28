@@ -71,5 +71,6 @@ export const Description = styled.article`
     css`
       max-width: 670px;
       margin: 0;
+      line-height: inherit;
     `}
 `;

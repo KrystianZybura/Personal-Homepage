@@ -18,6 +18,8 @@ export const useTheme = () => {
       firstBoxShadow: "#090A3308",
       secondBoxShadow: "#090A3305",
       buttonBoxShadow: darkTheme ? "#6D93BE" : "#8CC2FF",
+      letterSpacing: 0.7,
+      lineHeight: 25.2,
     },
     breakpoints: {
       laptop: 1200,
