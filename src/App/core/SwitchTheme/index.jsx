@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { useMediaQuery } from "react-responsive";
+import { useTheme } from "styled-components";
 
 import { ThemeContext, ThemeUpdateContext } from "../../../ThemeStatus";
 import { Heading } from "../../common/Heading";
@@ -11,7 +12,11 @@ const SwitchTheme = () => {
   const darkTheme = useContext(ThemeContext);
   const toggleTheme = useContext(ThemeUpdateContext);
 
-  const isMedia = useMediaQuery({ maxWidth: 767 });
+  const theme = useTheme();
+
+  const isMedia = useMediaQuery({
+    maxWidth: theme.breakpoints.tablet,
+  });
 
   return (
     <SwitchThemeContainer>
