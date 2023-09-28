@@ -15,7 +15,7 @@ export const SocialsWrapper = styled.div`
   }
 `;
 
-export const createIcon = (svg) => styled(svg)`
+const createIcon = (svg) => styled(svg)`
   width: 48px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
