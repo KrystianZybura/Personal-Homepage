@@ -11,12 +11,12 @@ const SwitchTheme = () => {
   const darkTheme = useContext(ThemeContext);
   const toggleTheme = useContext(ThemeUpdateContext);
 
-  const isMobile = useMediaQuery({ maxWidth: 767 });
+  const isMedia = useMediaQuery({ maxWidth: 767 });
 
   return (
     <SwitchThemeContainer>
       <Heading>
-        {isMobile ? "" : `Dark mode ${darkTheme ? "on" : "off"}`}
+        {isMedia ? "" : `Dark mode ${darkTheme ? "on" : "off"}`}
       </Heading>
       <SwitchThemeButton onClick={() => toggleTheme()}>
         {darkTheme ? <DarkThemeIcon /> : <LightThemeIcon />}
