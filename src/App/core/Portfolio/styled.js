@@ -1,6 +1,6 @@
 import { css, styled } from "styled-components";
 
-import { ReactComponent as Logo } from "../../assets/github-logo.svg";
+import { ReactComponent as Logo } from "./githubLogo.svg";
 
 export const Heading = styled.div`
   display: grid;

@@ -1,7 +1,7 @@
-import heroImageUrl from "../../assets/hero.png";
 import EnhancedData from "../../common/EnhancedData";
 import HireMe from "./HireMe";
 import { about } from "./about";
+import heroImageUrl from "./hero.png";
 import { HeroWrapper, Image, Name } from "./styled";
 
 const Hero = ({ name, heading }) => (

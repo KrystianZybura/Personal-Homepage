@@ -2,9 +2,9 @@ import { useContext } from "react";
 import { useMediaQuery } from "react-responsive";
 
 import { ThemeContext, ThemeUpdateContext } from "../../../ThemeStatus";
-import { ReactComponent as DarkThemeIcon } from "../../assets/dark.svg";
-import { ReactComponent as LightThemeIcon } from "../../assets/light.svg";
 import { Heading } from "../../common/Heading";
+import { ReactComponent as DarkThemeIcon } from "./dark.svg";
+import { ReactComponent as LightThemeIcon } from "./light.svg";
 import { SwitchThemeButton, SwitchThemeContainer } from "./styled";
 
 const SwitchTheme = () => {

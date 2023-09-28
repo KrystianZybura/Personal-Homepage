@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-import { ReactComponent as icon } from "../../../assets/danger.svg";
+import { ReactComponent as icon } from "./dangerIcon.svg";
 
 export const ErrorWrapper = styled.div`
   text-align: center;
