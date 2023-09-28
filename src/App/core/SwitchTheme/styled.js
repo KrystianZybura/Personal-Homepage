@@ -1,4 +1,7 @@
-import { styled } from "styled-components";
+import { css, styled } from "styled-components";
+
+import { ReactComponent as DarkModeIcon } from "./darkMode.svg";
+import { ReactComponent as LightModeIcon } from "./lightMode.svg";
 
 export const SwitchThemeContainer = styled.div`
   position: absolute;
@@ -10,8 +13,35 @@ export const SwitchThemeContainer = styled.div`
 `;
 
 export const SwitchThemeButton = styled.button`
-  border: none;
-  padding: 0;
-  background: transparent;
+  display: grid;
+  align-content: center;
+  padding: 3px;
+  border: 1px solid ${({ theme }) => theme.styles.themeIconBackground};
+  border-radius: 14px;
+  height: 26px;
+  width: 48px;
+  background: ${({ theme }) => theme.styles.themeButtonBackground};
   cursor: pointer;
 `;
+
+export const IconWrapper = styled.div`
+  transition: transform 0.3s ease;
+
+  ${({ $darkTheme }) =>
+    $darkTheme &&
+    css`
+      transform: translateX(20px);
+    `}
+`;
+
+export const createModeIcon = (svg) => styled(svg)`
+  display: block;
+  background-color: ${({ theme }) => theme.styles.themeIconBackground};
+  width: 20px;
+  height: 20px;
+  padding: 3px;
+  border-radius: 50%;
+`;
+
+export const StyledLightModeIcon = createModeIcon(LightModeIcon);
+export const StyledDarkModeIcon = createModeIcon(DarkModeIcon);

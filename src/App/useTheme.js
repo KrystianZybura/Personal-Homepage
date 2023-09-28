@@ -18,6 +18,8 @@ export const useTheme = () => {
       firstBoxShadow: "#090A3308",
       secondBoxShadow: "#090A3305",
       buttonBoxShadow: darkTheme ? "#6D93BE" : "#8CC2FF",
+      themeButtonBackground: darkTheme ? "#6D6D6D" : "#E5E5E5",
+      themeIconBackground: darkTheme ? "#FFFFFF" : "#6E7E91",
       linkDecoration: "#0366d633",
       letterSpacing: 0.7,
       lineHeight: 25.2,

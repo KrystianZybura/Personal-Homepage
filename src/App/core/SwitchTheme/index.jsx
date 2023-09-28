@@ -4,9 +4,13 @@ import { useTheme } from "styled-components";
 
 import { ThemeContext, ThemeUpdateContext } from "../../../ThemeStatus";
 import { Heading } from "../../common/Heading";
-import { ReactComponent as DarkThemeIcon } from "./dark.svg";
-import { ReactComponent as LightThemeIcon } from "./light.svg";
-import { SwitchThemeButton, SwitchThemeContainer } from "./styled";
+import {
+  IconWrapper,
+  StyledDarkModeIcon,
+  StyledLightModeIcon,
+  SwitchThemeButton,
+  SwitchThemeContainer,
+} from "./styled";
 
 const SwitchTheme = () => {
   const darkTheme = useContext(ThemeContext);
@@ -24,7 +28,9 @@ const SwitchTheme = () => {
         {isMedia ? "" : `Dark mode ${darkTheme ? "on" : "off"}`}
       </Heading>
       <SwitchThemeButton onClick={() => toggleTheme()}>
-        {darkTheme ? <DarkThemeIcon /> : <LightThemeIcon />}
+        <IconWrapper $darkTheme={darkTheme}>
+          {darkTheme ? <StyledDarkModeIcon /> : <StyledLightModeIcon />}
+        </IconWrapper>
       </SwitchThemeButton>
     </SwitchThemeContainer>
   );
