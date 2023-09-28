@@ -26,8 +26,8 @@ export const StyledLink = styled.a`
   ${({ $tile }) =>
     $tile &&
     css`
-      border-bottom: 1px solid;
-      padding-bottom: 1px;
+      border-bottom: 1px solid ${({ theme }) => theme.styles.linkDecoration};
+      padding-bottom: 2px;
       word-break: break-word;
 
       &:hover {
