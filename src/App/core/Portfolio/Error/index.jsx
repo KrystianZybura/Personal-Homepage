@@ -1,10 +1,5 @@
-import {
-  EmergencyLink,
-  ErrorHeading,
-  ErrorIcon,
-  ErrorMessage,
-  ErrorWrapper,
-} from "./styled";
+import Link from "../../../common/Link";
+import { ErrorHeading, ErrorIcon, ErrorMessage, ErrorWrapper } from "./styled";
 
 const Error = () => (
   <ErrorWrapper>
@@ -15,13 +10,9 @@ const Error = () => (
       <br />
       You can check them directly on Github.
     </ErrorMessage>
-    <EmergencyLink
-      rel="no-referrer"
-      target="_blank"
-      href={"https://github.com/KrystianZybura"}
-    >
+    <Link buttonLink emergencyLink href={"https://github.com/KrystianZybura"}>
       Go to Github
-    </EmergencyLink>
+    </Link>
   </ErrorWrapper>
 );
 

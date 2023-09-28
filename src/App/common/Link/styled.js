@@ -38,11 +38,6 @@ export const StyledLink = styled.a`
     ${({ $buttonLink }) =>
     $buttonLink &&
     css`
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      gap: 16px;
-      max-width: 154px;
       padding: 12px 16px;
       border: 1px solid ${({ theme }) => theme.styles.border};
       border-radius: 4px;
@@ -50,20 +45,9 @@ export const StyledLink = styled.a`
       font-size: 20px;
       background-color: ${({ theme }) => theme.styles.primary};
       color: ${({ theme }) => theme.styles.fontWhite};
-      text-decoration: none;
 
       @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
-        gap: 12px;
         font-size: 18px;
-        max-width: 139px;
-        align-self: center;
-      }
-
-      @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
-        gap: 12px;
-        font-size: 18px;
-        max-width: 139px;
-        align-self: unset;
       }
 
       &:hover {
@@ -73,6 +57,41 @@ export const StyledLink = styled.a`
           2px 2px 0px 0px ${({ theme }) => theme.styles.buttonBoxShadow},
           -2px 2px 0px 0px ${({ theme }) => theme.styles.buttonBoxShadow},
           2px -2px 0px 0px ${({ theme }) => theme.styles.buttonBoxShadow};
+      }
+    `}
+
+    
+    ${({ $hireMe }) =>
+    $hireMe &&
+    css`
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      align-self: start;
+      gap: 16px;
+
+      @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
+        gap: 12px;
+        align-self: center;
+      }
+
+      @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+        align-self: start;
+      }
+    `}
+
+  ${({ $emergencyLink }) =>
+    $emergencyLink &&
+    css`
+      display: inline-block;
+
+      @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
+        padding: 10px 14px;
+      }
+
+      @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+        font-size: 16px;
+        padding: 8px 12px;
       }
     `}
 `;
