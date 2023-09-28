@@ -51,18 +51,7 @@ export const LinksContainer = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 8px;
-`;
-
-export const Link = styled.a`
   color: ${({ theme }) => theme.styles.primary};
-  text-decoration: none;
-  border-bottom: 1px solid currentColor;
-  justify-self: start;
-  padding-bottom: 2px;
-
-  &:hover {
-    filter: brightness(120%);
-  }
 `;
 
 export const LinkDescription = styled.span`

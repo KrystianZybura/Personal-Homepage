@@ -1,6 +1,6 @@
+import Link from "../../../common/Link";
 import {
   Description,
-  Link,
   LinkDescription,
   LinksContainer,
   TileWrapper,
@@ -18,11 +18,11 @@ const Tile = ({ repos }) =>
           <Description>{description}</Description>
           <LinksContainer>
             <LinkDescription>Demo:</LinkDescription>
-            <Link rel="no-referrer" target="_blank" href={homepage}>
+            <Link tile href={homepage}>
               https://link.demo.com
             </Link>
             <LinkDescription>Code:</LinkDescription>
-            <Link rel="no-referrer" target="_blank" href={html_url}>
+            <Link tile href={html_url}>
               https://link.code.com
             </Link>
           </LinksContainer>

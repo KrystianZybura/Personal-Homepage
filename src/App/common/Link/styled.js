@@ -2,6 +2,7 @@ import { css, styled } from "styled-components";
 
 export const StyledLink = styled.a`
   color: inherit;
+  text-decoration: none;
 
   &:hover {
     color: ${({ theme }) => theme.styles.primary};
@@ -12,8 +13,6 @@ export const StyledLink = styled.a`
     css`
       font-size: 32px;
       font-weight: 900;
-      text-decoration: none;
-      color: inherit;
 
       @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
         font-size: 28px;
@@ -21,6 +20,18 @@ export const StyledLink = styled.a`
 
       @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         font-size: 18px;
+      }
+    `}
+
+  ${({ $tile }) =>
+    $tile &&
+    css`
+      border-bottom: 1px solid currentColor;
+      justify-self: start;
+      padding-bottom: 2px;
+
+      &:hover {
+        filter: brightness(120%);
       }
     `}
 `;
