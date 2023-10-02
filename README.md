@@ -9,13 +9,15 @@
 
 Check my website here --> [Personal-Homepage](https://krystianzybura.github.io/Personal-Homepage/).
 
-<!-- ## Preview: -->
-
 ## Description
 
 This website is designed to be a quick preview of my current programming skills, which is not only a combination of the experiences I gained through all the previous web develoment, but also a complete information about skillset, contacts and more.
 
 It is also one of the final projects from my programming course - Youcode 🏆.
+
+## Preview:
+
+![preview-gif](preview.gif)
 
 ## Technologies
 
