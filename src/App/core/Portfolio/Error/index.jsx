@@ -1,4 +1,4 @@
-import Link from "../../../common/Link";
+import ButtonLink from "../../../common/ButtonLink";
 import { ErrorHeading, ErrorIcon, ErrorMessage, ErrorWrapper } from "./styled";
 
 const Error = () => (
@@ -10,9 +10,9 @@ const Error = () => (
       <br />
       You can check them directly on Github.
     </ErrorMessage>
-    <Link buttonLink emergencyLink href={"https://github.com/KrystianZybura"}>
+    <ButtonLink emergencyLink href={"https://github.com/KrystianZybura"}>
       Go to Github
-    </Link>
+    </ButtonLink>
   </ErrorWrapper>
 );
 

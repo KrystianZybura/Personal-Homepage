@@ -1,11 +1,11 @@
-import Link from "../../../common/Link";
+import ButtonLink from "../../../common/ButtonLink";
 import { ReactComponent as EmailIcon } from "./emailIcon.svg";
 
 const HireMe = () => (
-  <Link buttonLink hireMe href="mailto:zybura.dev@gmail.com">
+  <ButtonLink hireMe href="mailto:zybura.dev@gmail.com">
     <EmailIcon />
     Hire Me
-  </Link>
+  </ButtonLink>
 );
 
 export default HireMe;
