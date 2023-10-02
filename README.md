@@ -5,25 +5,25 @@
 
 </div>
 
-## Demo:
+## 🚀 Demo:
 
 Check my website here --> [Personal-Homepage](https://krystianzybura.github.io/Personal-Homepage/).
 
-## Description
+## 📄 Description
 
 This website is designed to be a quick preview of my current programming skills, which is not only a combination of the experiences I gained through all the previous web develoment, but also a complete information about skillset, contacts and more.
 
 It is also one of the final projects from my programming course - Youcode 🏆.
 
-## Preview:
+## 👇 Preview:
 
 ![preview-gif](preview.gif)
 
-## Technologies
+## 💻 Technologies
 
 ![Technologies](https://skillicons.dev/icons?i=html,js,css,react,styledcomponents,vite,git,figma,)
 
-## React + Vite
+### React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
