@@ -18,8 +18,8 @@ const GlobalStyles = createGlobalStyle`
     line-height: ${({ theme }) => theme.styles.lineHeight}px;
     letter-spacing:  ${({ theme }) => theme.styles.letterSpacing}px;
     color: ${({ theme }) => theme.styles.font};
+    transition: background 0.5s;
     word-break: break-word;
-    transition: all 0.5s;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
       font-size: 17px;
