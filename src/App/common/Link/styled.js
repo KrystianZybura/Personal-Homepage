@@ -3,10 +3,10 @@ import { css, styled } from "styled-components";
 export const StyledLink = styled.a`
   color: inherit;
   text-decoration: none;
+  transition: all 0.3s;
 
   &:hover {
     color: ${({ theme }) => theme.styles.primary};
-    transition: all 0.3s;
   }
 
   ${({ $email }) =>
