@@ -5,7 +5,7 @@
 
 </div>
 
-## 🚀 Demo:
+## 🚀 Demo
 
 Check my website here --> [Personal-Homepage](https://krystianzybura.github.io/Personal-Homepage/).
 
@@ -15,7 +15,7 @@ This website is designed to provide a complete information about my current prog
 
 It is also one of the final projects from my programming course - Youcode 🏆.
 
-## 👇 Preview:
+## 👇 Preview
 
 ![preview-gif](preview.gif)
 
