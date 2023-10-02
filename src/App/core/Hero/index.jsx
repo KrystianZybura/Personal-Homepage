@@ -1,6 +1,6 @@
 import EnhancedData from "../../common/EnhancedData";
+import { HERO_ABOUT } from "../../common/textConstants";
 import HireMe from "./HireMe";
-import { about } from "./about";
 import heroImageUrl from "./hero.png";
 import { HeroWrapper, Image, Name } from "./styled";
 
@@ -10,7 +10,7 @@ const Hero = ({ name, heading }) => (
     <EnhancedData
       heading={heading}
       title={<Name>{name}</Name>}
-      description={about}
+      description={HERO_ABOUT}
       socials={<HireMe />}
       hero
     />

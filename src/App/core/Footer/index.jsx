@@ -1,13 +1,13 @@
 import EnhancedData from "../../common/EnhancedData";
+import { FOOTER_DESCRIPTION } from "../../common/textConstants";
 import Email from "./Email";
 import Socials from "./Socials";
-import { description } from "./description";
 
 const Footer = ({ heading }) => (
   <EnhancedData
     heading={heading}
     title={<Email />}
-    description={description}
+    description={FOOTER_DESCRIPTION}
     socials={<Socials />}
     footer
   />
