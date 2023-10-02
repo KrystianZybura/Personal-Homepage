@@ -22,6 +22,7 @@ export const Title = styled.h2`
 
       @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
         padding-bottom: 12px;
+        line-height: 22px;
       }
     `}
 `;
