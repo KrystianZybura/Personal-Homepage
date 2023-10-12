@@ -58,12 +58,12 @@ export const Description = styled.div`
 export const LinksContainer = styled.dl`
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 8px;
+  grid-gap: 12px;
   color: ${({ theme }) => theme.styles.primary};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
     grid-template-columns: 1fr;
-    grid-row-gap: 4px;
+    grid-gap: 6px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
@@ -72,6 +72,7 @@ export const LinksContainer = styled.dl`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     grid-template-columns: 1fr;
+    grid-gap: 4px;
   }
 `;
 
