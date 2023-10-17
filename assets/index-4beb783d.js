@@ -477,6 +477,7 @@ looking for new job opportunities, learning new skills in the meantime.`,km="I'm
   border: 6px solid ${({theme:e})=>e.styles.border};
   border-radius: 4px;
   padding: 56px;
+  transition: border-color 0.3s;
   box-shadow:
     0px 16px 58px 0px ${({theme:e})=>e.styles.firstBoxShadow},
     0px -2px 50px 0px ${({theme:e})=>e.styles.secondBoxShadow};
@@ -519,12 +520,12 @@ looking for new job opportunities, learning new skills in the meantime.`,km="I'm
 `,ly=b.dl`
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 8px;
+  grid-gap: 12px;
   color: ${({theme:e})=>e.styles.primary};
 
   @media (max-width: ${({theme:e})=>e.breakpoints.laptop}px) {
     grid-template-columns: 1fr;
-    grid-row-gap: 4px;
+    grid-gap: 6px;
   }
 
   @media (max-width: ${({theme:e})=>e.breakpoints.tablet}px) {
@@ -533,6 +534,7 @@ looking for new job opportunities, learning new skills in the meantime.`,km="I'm
 
   @media (max-width: ${({theme:e})=>e.breakpoints.mobile}px) {
     grid-template-columns: 1fr;
+    grid-gap: 4px;
   }
 `,gc=b.dt`
   color: ${({theme:e})=>e.styles.fontSecondary};
@@ -614,6 +616,10 @@ Valid keys: `+JSON.stringify(Object.keys(_),null,"  "));var ke=L(Q,q,B,X,W+"."+q
   width: 48px;
   background: ${({theme:e})=>e.styles.themeButtonBackground};
   cursor: pointer;
+
+  &:focus-visible {
+    outline-offset: 1px;
+  }
 `,Fg=b.div`
   transition: transform 0.3s ease;
 
