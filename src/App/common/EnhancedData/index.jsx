@@ -1,4 +1,4 @@
-import { Heading } from "../Heading";
+import { SpecialText } from "../SpecialText";
 import { Description, EnhancedDataWrapper, Title } from "./styled";
 
 const EnhancedData = ({
@@ -10,7 +10,7 @@ const EnhancedData = ({
   hero,
 }) => (
   <EnhancedDataWrapper $hero={hero} $footer={footer}>
-    <Heading>{heading}</Heading>
+    <SpecialText>{heading}</SpecialText>
     <Title $hero={hero}>{title}</Title>
     <Description $footer={footer}>{description}</Description>
     {socials}
