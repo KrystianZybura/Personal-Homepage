@@ -1,9 +1,7 @@
 import { useContext } from "react";
-import { useMediaQuery } from "react-responsive";
-import { useTheme } from "styled-components";
 
 import { ThemeContext, ThemeUpdateContext } from "../../../ThemeStatus";
-import { Heading } from "../../common/Heading";
+import { SpecialText } from "../../common/SpecialText";
 import {
   IconWrapper,
   StyledDarkModeIcon,
@@ -16,19 +14,13 @@ const SwitchTheme = () => {
   const darkTheme = useContext(ThemeContext);
   const toggleTheme = useContext(ThemeUpdateContext);
 
-  const theme = useTheme();
-
-  const isMedia = useMediaQuery({
-    maxWidth: theme.breakpoints.tablet,
-  });
-
   return (
     <SwitchThemeContainer>
-      <Heading>
-        {isMedia ? "" : `Dark mode ${darkTheme ? "on" : "off"}`}
-      </Heading>
+      <SpecialText $noDisplay>
+        {`Dark mode ${darkTheme ? "on" : "off"}`}
+      </SpecialText>
       <SwitchThemeButton onClick={() => toggleTheme()}>
-        <IconWrapper $darkTheme={darkTheme}>
+        <IconWrapper $moveToRight={darkTheme}>
           {darkTheme ? <StyledDarkModeIcon /> : <StyledLightModeIcon />}
         </IconWrapper>
       </SwitchThemeButton>
