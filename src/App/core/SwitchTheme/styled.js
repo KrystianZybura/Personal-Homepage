@@ -22,6 +22,10 @@ export const SwitchThemeButton = styled.button`
   width: 48px;
   background: ${({ theme }) => theme.styles.themeButtonBackground};
   cursor: pointer;
+
+  &:focus-visible {
+    outline-offset: 1px;
+  }
 `;
 
 export const IconWrapper = styled.div`
