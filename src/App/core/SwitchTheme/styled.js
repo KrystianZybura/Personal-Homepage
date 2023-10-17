@@ -31,8 +31,8 @@ export const SwitchThemeButton = styled.button`
 export const IconWrapper = styled.div`
   transition: transform 0.3s ease;
 
-  ${({ $darkTheme }) =>
-    $darkTheme &&
+  ${({ $moveToRight }) =>
+    $moveToRight &&
     css`
       transform: translateX(20px);
     `}
