@@ -10,9 +10,7 @@ export const TileWrapper = styled.div`
   border-radius: 4px;
   padding: 56px;
   transition: border-color 0.3s;
-  box-shadow:
-    0px 16px 58px 0px ${({ theme }) => theme.styles.firstBoxShadow},
-    0px -2px 50px 0px ${({ theme }) => theme.styles.secondBoxShadow};
+  box-shadow: ${({ theme }) => theme.styles.boxShadow};
 
   &:hover {
     border-color: ${({ theme }) => theme.styles.borderHover};

@@ -2,9 +2,7 @@ import { styled } from "styled-components";
 
 export const SectionWrapper = styled.section`
   background: ${({ theme }) => theme.styles.sectionBackground};
-  box-shadow:
-    0px 16px 58px 0px ${({ theme }) => theme.styles.firstBoxShadow},
-    0px -2px 50px 0px ${({ theme }) => theme.styles.secondBoxShadow};
+  box-shadow: ${({ theme }) => theme.styles.boxShadow};
   padding: 32px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
