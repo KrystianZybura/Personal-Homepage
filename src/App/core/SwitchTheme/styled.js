@@ -39,7 +39,7 @@ export const IconWrapper = styled.div`
 export const SunIcon = styled(Icon)`
   display: block;
   color: ${({ theme }) => theme.styles.background};
-  background-color: ${({ theme }) => theme.styles.themeIconBackground};
+  background-color: ${({ theme }) => theme.styles.sunIconBackground};
   width: 20px;
   height: 20px;
   padding: 3px;

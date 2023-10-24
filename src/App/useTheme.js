@@ -18,7 +18,7 @@ export const useTheme = () => {
       boxShadow: "0px 16px 58px 0px #090A3308, 0px -2px 50px 0px #090A3305",
       buttonBoxShadow: darkTheme ? "#6D93BE" : "#8CC2FF",
       themeButtonBackground: darkTheme ? "#6D6D6D" : "#E5E5E5",
-      themeIconBackground: darkTheme ? "#FFFFFF" : "#6E7E91",
+      sunIconBackground: darkTheme ? "#FFFFFF" : "#6E7E91",
       linkDecoration: "#0366d633",
       letterSpacing: 0.7,
       lineHeight: 25.2,
