@@ -16,9 +16,7 @@ const SwitchTheme = () => {
 
   return (
     <SwitchThemeContainer>
-      <SpecialText $noDisplay>
-        {`Dark mode ${darkTheme ? "on" : "off"}`}
-      </SpecialText>
+      <SpecialText $noDisplay>Dark mode {darkTheme ? "on" : "off"}</SpecialText>
       <SwitchThemeButton onClick={() => toggleTheme()}>
         <IconWrapper $moveToRight={darkTheme}>
           {darkTheme ? <StyledDarkModeIcon /> : <StyledLightModeIcon />}
