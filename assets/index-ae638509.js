@@ -600,23 +600,23 @@ looking for new job opportunities, learning new skills in the meantime.`,lm="I'm
   border: none;
   outline-offset: 8px;
   cursor: pointer;
-`,vy=A.div`
-  display: grid;
-  align-content: center;
+`,vy=A.span`
+  display: flex;
+  align-items: center;
   padding: 3px;
   border: 1px solid ${({theme:e})=>e.styles.fontSecondary};
   border-radius: 14px;
   height: 26px;
   width: 48px;
   background: ${({theme:e})=>e.styles.themeButtonBackground};
-`,wy=A.div`
+`,wy=A.span`
+  display: flex;
   transition: transform 0.3s ease;
 
   ${({$moveToRight:e})=>e&&ve`
       transform: translateX(20px);
     `}
 `,xy=A(gy)`
-  display: block;
   color: ${({theme:e})=>e.styles.background};
   background-color: ${({theme:e})=>e.styles.sunIconBackground};
   width: 20px;
