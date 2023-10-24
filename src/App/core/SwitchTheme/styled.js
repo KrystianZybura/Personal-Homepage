@@ -15,9 +15,9 @@ export const Button = styled.button`
   cursor: pointer;
 `;
 
-export const Box = styled.div`
-  display: grid;
-  align-content: center;
+export const Box = styled.span`
+  display: flex;
+  align-items: center;
   padding: 3px;
   border: 1px solid ${({ theme }) => theme.styles.fontSecondary};
   border-radius: 14px;
@@ -26,7 +26,8 @@ export const Box = styled.div`
   background: ${({ theme }) => theme.styles.themeButtonBackground};
 `;
 
-export const IconWrapper = styled.div`
+export const IconWrapper = styled.span`
+  display: flex;
   transition: transform 0.3s ease;
 
   ${({ $moveToRight }) =>
@@ -37,7 +38,6 @@ export const IconWrapper = styled.div`
 `;
 
 export const SunIcon = styled(Icon)`
-  display: block;
   color: ${({ theme }) => theme.styles.background};
   background-color: ${({ theme }) => theme.styles.sunIconBackground};
   width: 20px;
