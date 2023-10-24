@@ -1,18 +1,21 @@
 import { css, styled } from "styled-components";
 
-import { ReactComponent as DarkModeIcon } from "./darkMode.svg";
-import { ReactComponent as LightModeIcon } from "./lightMode.svg";
+import { ReactComponent as Icon } from "./icon.svg";
 
-export const SwitchThemeContainer = styled.div`
+export const Button = styled.button`
   position: absolute;
   justify-self: end;
   align-self: flex-start;
   display: flex;
   place-items: center;
   gap: 12px;
+  background: inherit;
+  border: none;
+  outline-offset: 8px;
+  cursor: pointer;
 `;
 
-export const SwitchThemeButton = styled.button`
+export const Box = styled.div`
   display: grid;
   align-content: center;
   padding: 3px;
@@ -21,11 +24,6 @@ export const SwitchThemeButton = styled.button`
   height: 26px;
   width: 48px;
   background: ${({ theme }) => theme.styles.themeButtonBackground};
-  cursor: pointer;
-
-  &:focus-visible {
-    outline-offset: 1px;
-  }
 `;
 
 export const IconWrapper = styled.div`
@@ -38,14 +36,12 @@ export const IconWrapper = styled.div`
     `}
 `;
 
-export const createModeIcon = (svg) => styled(svg)`
+export const SunIcon = styled(Icon)`
   display: block;
+  color: ${({ theme }) => theme.styles.background};
   background-color: ${({ theme }) => theme.styles.themeIconBackground};
   width: 20px;
   height: 20px;
   padding: 3px;
   border-radius: 50%;
 `;
-
-export const StyledLightModeIcon = createModeIcon(LightModeIcon);
-export const StyledDarkModeIcon = createModeIcon(DarkModeIcon);

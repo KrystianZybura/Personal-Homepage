@@ -2,27 +2,21 @@ import { useContext } from "react";
 
 import { ThemeContext, ThemeUpdateContext } from "../../../ThemeStatus";
 import { SpecialText } from "../../common/SpecialText";
-import {
-  IconWrapper,
-  StyledDarkModeIcon,
-  StyledLightModeIcon,
-  SwitchThemeButton,
-  SwitchThemeContainer,
-} from "./styled";
+import { Box, Button, IconWrapper, SunIcon } from "./styled";
 
 const SwitchTheme = () => {
   const darkTheme = useContext(ThemeContext);
   const toggleTheme = useContext(ThemeUpdateContext);
 
   return (
-    <SwitchThemeContainer>
+    <Button onClick={() => toggleTheme()}>
       <SpecialText $noDisplay>Dark mode {darkTheme ? "on" : "off"}</SpecialText>
-      <SwitchThemeButton onClick={() => toggleTheme()}>
+      <Box>
         <IconWrapper $moveToRight={darkTheme}>
-          {darkTheme ? <StyledDarkModeIcon /> : <StyledLightModeIcon />}
+          <SunIcon />
         </IconWrapper>
-      </SwitchThemeButton>
-    </SwitchThemeContainer>
+      </Box>
+    </Button>
   );
 };
 
