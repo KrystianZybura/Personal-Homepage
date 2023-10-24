@@ -19,7 +19,7 @@ export const Box = styled.div`
   display: grid;
   align-content: center;
   padding: 3px;
-  border: 1px solid ${({ theme }) => theme.styles.themeIconBackground};
+  border: 1px solid ${({ theme }) => theme.styles.fontSecondary};
   border-radius: 14px;
   height: 26px;
   width: 48px;
