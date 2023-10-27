@@ -15,8 +15,8 @@ export const SocialsWrapper = styled.div`
   }
 `;
 
-const createIcon = (svg) => styled(svg)`
-  width: 48px;
+const styleIcon = (icon) => styled(icon)`
+  height: auto;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     width: 40px;
@@ -27,6 +27,6 @@ const createIcon = (svg) => styled(svg)`
   }
 `;
 
-export const FacebookIcon = createIcon(Facebook);
-export const GithubIcon = createIcon(Github);
-export const LinkedInIcon = createIcon(LinkedIn);
+export const FacebookIcon = styleIcon(Facebook);
+export const GithubIcon = styleIcon(Github);
+export const LinkedInIcon = styleIcon(LinkedIn);
