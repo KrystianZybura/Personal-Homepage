@@ -12,7 +12,7 @@ export const StyledButtonLink = styled.a`
   font-size: 20px;
   background-color: ${({ theme }) => theme.styles.primary};
   color: ${({ theme }) => theme.styles.fontWhite};
-  transition: all 0.3s;
+  transition: box-shadow 0.3s;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     font-size: 18px;
