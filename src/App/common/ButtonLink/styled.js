@@ -20,10 +20,10 @@ export const StyledButtonLink = styled.a`
 
   &:hover {
     box-shadow:
-      -2px -2px 0px 0px ${({ theme }) => theme.styles.buttonBoxShadow},
-      2px 2px 0px 0px ${({ theme }) => theme.styles.buttonBoxShadow},
-      -2px 2px 0px 0px ${({ theme }) => theme.styles.buttonBoxShadow},
-      2px -2px 0px 0px ${({ theme }) => theme.styles.buttonBoxShadow};
+      -2px -2px 0px 0px ${({ theme }) => theme.styles.buttonLinkBoxShadow},
+      2px 2px 0px 0px ${({ theme }) => theme.styles.buttonLinkBoxShadow},
+      -2px 2px 0px 0px ${({ theme }) => theme.styles.buttonLinkBoxShadow},
+      2px -2px 0px 0px ${({ theme }) => theme.styles.buttonLinkBoxShadow};
   }
 
   ${({ $hireMe }) =>
