@@ -1,9 +1,5 @@
 import { styled } from "styled-components";
 
-import { ReactComponent as Facebook } from "./icons/facebookLogo.svg";
-import { ReactComponent as Github } from "./icons/githubLogoAlt.svg";
-import { ReactComponent as LinkedIn } from "./icons/linkedInLogo.svg";
-
 export const SocialsWrapper = styled.div`
   display: flex;
   gap: 24px;
@@ -15,7 +11,7 @@ export const SocialsWrapper = styled.div`
   }
 `;
 
-const styleIcon = (icon) => styled(icon)`
+export const styleIcon = (icon) => styled(icon)`
   height: auto;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
@@ -26,7 +22,3 @@ const styleIcon = (icon) => styled(icon)`
     width: 32px;
   }
 `;
-
-export const FacebookIcon = styleIcon(Facebook);
-export const GithubIcon = styleIcon(Github);
-export const LinkedInIcon = styleIcon(LinkedIn);
