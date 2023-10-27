@@ -1,8 +1,8 @@
 import { styled } from "styled-components";
 
-import { ReactComponent as Facebook } from "./facebookLogo.svg";
-import { ReactComponent as Github } from "./githubLogoAlt.svg";
-import { ReactComponent as LinkedIn } from "./linkedInLogo.svg";
+import { ReactComponent as Facebook } from "./icons/facebookLogo.svg";
+import { ReactComponent as Github } from "./icons/githubLogoAlt.svg";
+import { ReactComponent as LinkedIn } from "./icons/linkedInLogo.svg";
 
 export const SocialsWrapper = styled.div`
   display: flex;
