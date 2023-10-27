@@ -16,7 +16,7 @@ const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.styles.background};
     font-size: 18px;
     line-height: ${({ theme }) => theme.styles.lineHeight}px;
-    letter-spacing:  ${({ theme }) => theme.styles.letterSpacing}px;
+    letter-spacing:  ${({ theme }) => theme.styles.letterSpacing}em;
     color: ${({ theme }) => theme.styles.font};
     transition: background 0.5s;
     word-break: break-word;

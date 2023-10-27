@@ -20,7 +20,7 @@ export const useTheme = () => {
       themeButtonBackground: darkTheme ? "#6D6D6D" : "#E5E5E5",
       sunIconBackground: darkTheme ? "#FFFFFF" : "#6E7E91",
       linkDecoration: "#0366d633",
-      letterSpacing: 0.7,
+      letterSpacing: 0.05,
       lineHeight: 25.2,
     },
     breakpoints: {
