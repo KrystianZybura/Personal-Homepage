@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-export const SocialsWrapper = styled.div`
+export const SocialsWrapper = styled.address`
   display: flex;
   gap: 24px;
   margin-top: 32px;
