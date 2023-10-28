@@ -33,7 +33,7 @@ export const TileWrapper = styled.div`
   }
 `;
 
-export const Title = styled.h3`
+export const Title = styled.h4`
   font-size: 24px;
   font-weight: 700;
   color: ${({ theme }) => theme.styles.primary};
@@ -48,7 +48,8 @@ export const Title = styled.h3`
   }
 `;
 
-export const Description = styled.div`
+export const Description = styled.p`
+  margin: 0;
   align-self: flex-start;
   color: ${({ theme }) => theme.styles.fontSecondary};
 `;

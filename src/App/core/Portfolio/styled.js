@@ -21,8 +21,10 @@ export const GithubLogo = styled(Logo)`
   }
 `;
 
-export const Subtitle = styled.span`
+export const Subtitle = styled.h3`
   font-size: 20px;
+  font-weight: normal;
+  margin: 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     font-size: 18px;
