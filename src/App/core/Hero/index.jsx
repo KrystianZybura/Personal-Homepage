@@ -3,7 +3,7 @@ import { Heading } from "../../common/Heading";
 import { email } from "../../common/email";
 import { HERO_ABOUT } from "../../common/textConstants";
 import { ReactComponent as EmailIcon } from "./emailIcon.svg";
-import heroImageUrl from "./hero.png";
+import heroImageUrl from "./heroImage.png";
 import { Data, Description, HeroWrapper, Image, Name } from "./styled";
 
 const Hero = ({ name, heading }) => (
