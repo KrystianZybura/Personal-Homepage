@@ -5,6 +5,7 @@ export const Heading = styled.h2`
   text-transform: uppercase;
   color: ${({ theme }) => theme.styles.fontSecondary};
   margin: 0;
+  letter-spacing: initial;
 
   ${({ $noDisplay }) =>
     $noDisplay &&
