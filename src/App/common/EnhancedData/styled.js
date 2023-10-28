@@ -50,20 +50,19 @@ export const Title = styled.div`
     `}
 `;
 
-export const Description = styled.article`
+export const Description = styled.p`
+  margin: 0;
   font-size: 20px;
   line-height: 28px;
   color: ${({ theme }) => theme.styles.fontSecondary};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     font-size: 19px;
-    margin-right: 30px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     font-size: 17px;
     line-height: 24px;
-    margin: 0;
   }
 
   ${({ $footer }) =>
