@@ -20,7 +20,6 @@ export const Text = styled.span`
   font-size: 12px;
   text-transform: uppercase;
   color: ${({ theme }) => theme.styles.fontSecondary};
-  margin: 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     display: none;
