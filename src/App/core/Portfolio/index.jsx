@@ -2,7 +2,7 @@ import { Title } from "../../common/Title";
 import Error from "./Error";
 import Loading from "./Loading";
 import Tile from "./Tile";
-import { GithubLogo, Heading, Projects, Subtitle } from "./styled";
+import { GithubIcon, Heading, Projects, Subtitle } from "./styled";
 import { useReposData } from "./useReposData";
 
 const Portfolio = ({ title, subtitle }) => {
@@ -11,7 +11,7 @@ const Portfolio = ({ title, subtitle }) => {
   return (
     <>
       <Heading>
-        <GithubLogo />
+        <GithubIcon />
         <Title>{title}</Title>
         <Subtitle>{subtitle}</Subtitle>
       </Heading>

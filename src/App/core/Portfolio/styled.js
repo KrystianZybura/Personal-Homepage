@@ -1,6 +1,6 @@
 import { css, styled } from "styled-components";
 
-import { ReactComponent as Logo } from "./githubLogo.svg";
+import { ReactComponent as Icon } from "./githubIcon.svg";
 
 export const Heading = styled.div`
   display: grid;
@@ -8,7 +8,7 @@ export const Heading = styled.div`
   grid-gap: 8px;
 `;
 
-export const GithubLogo = styled(Logo)`
+export const GithubIcon = styled(Icon)`
   color: ${({ theme }) => theme.styles.primary};
   margin-bottom: 4px;
 
