@@ -11,13 +11,13 @@ import SwitchTheme from "./SwitchTheme";
 const PersonalHomepage = () => (
   <Layout>
     <Header>
-      <Hero name={"Krystian Żybura"} heading={"This is"} />
+      <Hero name="Krystian Żybura" heading="This is" />
       <SwitchTheme />
     </Header>
-    <Section title={"My skillset includes 🛠"} body={skillset} />
-    <Section title={"What I want to learn next 🚀"} body={skillsToLearn} />
-    <Portfolio title={"Portfolio"} subtitle={"My recent projects"} />
-    <Footer heading={"Let's talk!"} />
+    <Section title="My skillset includes 🛠" body={skillset} />
+    <Section title="What I want to learn next 🚀" body={skillsToLearn} />
+    <Portfolio title="Portfolio" subtitle="My recent projects" />
+    <Footer heading="Let's talk!" />
   </Layout>
 );
 
