@@ -1,19 +1,18 @@
-import EnhancedData from "../../common/EnhancedData";
+import { Heading } from "../../common/Heading";
 import { HERO_ABOUT } from "../../common/textConstants";
 import HireMe from "./HireMe";
 import heroImageUrl from "./hero.png";
-import { HeroWrapper, Image, Name } from "./styled";
+import { Data, Description, HeroWrapper, Image, Name } from "./styled";
 
 const Hero = ({ name, heading }) => (
   <HeroWrapper>
     <Image src={heroImageUrl} alt={`Photo of ${name}`} />
-    <EnhancedData
-      heading={heading}
-      title={<Name>{name}</Name>}
-      description={HERO_ABOUT}
-      socials={<HireMe />}
-      hero
-    />
+    <Data>
+      <Heading>{heading}</Heading>
+      <Name>{name}</Name>
+      <Description>{HERO_ABOUT}</Description>
+      <HireMe />
+    </Data>
   </HeroWrapper>
 );
 

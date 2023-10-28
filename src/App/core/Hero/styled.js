@@ -38,10 +38,28 @@ export const Image = styled.img`
   }
 `;
 
+export const Data = styled.div`
+  max-width: 633px;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 32px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
+    gap: 24px;
+    text-align: center;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    gap: 16px;
+    text-align: unset;
+  }
+`;
+
 export const Name = styled.h1`
   font-size: 38px;
   font-weight: 900;
   margin: 0;
+  margin: -20px 0 3px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
     font-size: 32px;
@@ -49,9 +67,26 @@ export const Name = styled.h1`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     font-size: 30px;
+    margin: -4px 0 4px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     font-size: 22px;
+  }
+`;
+
+export const Description = styled.p`
+  margin: 0;
+  font-size: 20px;
+  line-height: 28px;
+  color: ${({ theme }) => theme.styles.fontSecondary};
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
+    font-size: 19px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    font-size: 17px;
+    line-height: 24px;
   }
 `;
