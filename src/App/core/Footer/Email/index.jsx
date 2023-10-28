@@ -1,8 +1,9 @@
 import Link from "../../../common/Link";
+import { email } from "../../../common/email";
 
 const Email = () => (
-  <Link email href="mailto:zybura.dev@gmail.com">
-    zybura.dev@gmail.com
+  <Link email href={`mailto:${email}`}>
+    {email}
   </Link>
 );
 
