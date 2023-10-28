@@ -1,6 +1,6 @@
 import { css, styled } from "styled-components";
 
-import { ReactComponent as Icon } from "./icon.svg";
+import { ReactComponent as Icon } from "./sunIcon.svg";
 
 export const Button = styled.button`
   position: absolute;
