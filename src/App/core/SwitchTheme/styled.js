@@ -15,6 +15,18 @@ export const Button = styled.button`
   cursor: pointer;
 `;
 
+export const Text = styled.span`
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: ${({ theme }) => theme.styles.fontSecondary};
+  margin: 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
+    display: none;
+  }
+`;
+
 export const Box = styled.span`
   display: flex;
   align-items: center;

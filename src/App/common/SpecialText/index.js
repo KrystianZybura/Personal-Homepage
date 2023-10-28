@@ -1,10 +1,10 @@
 import { css, styled } from "styled-components";
 
-export const SpecialText = styled.span`
-  font-weight: 700;
+export const SpecialText = styled.h2`
   font-size: 12px;
   text-transform: uppercase;
   color: ${({ theme }) => theme.styles.fontSecondary};
+  margin: 0;
 
   ${({ $noDisplay }) =>
     $noDisplay &&
