@@ -1,5 +1,5 @@
 import { Title } from "../Title";
-import listStyleImageUrl from "./list-style.svg";
+import listStyleImageUrl from "./list-style-image.svg";
 import { Item, List, SectionWrapper } from "./styled";
 
 const Section = ({ title, body }) => (
