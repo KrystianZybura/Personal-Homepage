@@ -31,7 +31,7 @@ export const StyledLink = styled.a`
       padding-bottom: 2px;
 
       &:hover {
-        filter: brightness(120%);
+        border-color: unset;
       }
     `}
 `;
