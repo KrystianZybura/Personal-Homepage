@@ -37,10 +37,18 @@ export const List = styled.ul`
 export const Item = styled.li`
   display: inline-flex;
   place-items: center;
-  gap: 15px;
+  gap: 16px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    gap: 8px;
+  }
 `;
 
 export const Bullet = styled(BulletImage)`
   color: ${({ theme }) => theme.styles.primary};
   flex-shrink: 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    width: 6px;
+  }
 `;
