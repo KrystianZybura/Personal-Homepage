@@ -8,7 +8,7 @@ import { Description, FooterWrapper } from "./styled";
 const Footer = ({ heading }) => (
   <FooterWrapper>
     <Heading>{heading}</Heading>
-    <Link email href={`mailto:${email}`}>
+    <Link email href={`mailto:${email}`} title={email}>
       {email}
     </Link>
     <Description>{FOOTER_DESCRIPTION}</Description>
