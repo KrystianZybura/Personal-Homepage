@@ -23,8 +23,6 @@ export const Description = styled.p`
   line-height: 28px;
   color: ${({ theme }) => theme.styles.fontSecondary};
   max-width: 670px;
-  margin: 0;
-  line-height: inherit;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     font-size: 19px;
