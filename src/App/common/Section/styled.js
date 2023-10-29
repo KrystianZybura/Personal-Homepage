@@ -1,5 +1,7 @@
 import { styled } from "styled-components";
 
+import { ReactComponent as BulletImage } from "./bulletImage.svg";
+
 export const SectionWrapper = styled.section`
   background: ${({ theme }) => theme.styles.sectionBackground};
   box-shadow: ${({ theme }) => theme.styles.boxShadow};
@@ -15,16 +17,16 @@ export const SectionWrapper = styled.section`
 `;
 
 export const List = styled.ul`
-  list-style-image: url(${({ $listStyleUrl }) => $listStyleUrl});
+  list-style: none;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   margin: 0;
-  padding-left: 15px;
+  padding: 0;
   color: ${({ theme }) => theme.styles.fontSecondary};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
@@ -33,5 +35,12 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-  padding-left: 8px;
+  display: inline-flex;
+  place-items: center;
+  gap: 15px;
+`;
+
+export const Bullet = styled(BulletImage)`
+  color: ${({ theme }) => theme.styles.primary};
+  flex-shrink: 0;
 `;
