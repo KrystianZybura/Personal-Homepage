@@ -2,7 +2,7 @@ import ButtonLink from "../../common/ButtonLink";
 import { Heading } from "../../common/Heading";
 import { email } from "../../common/email";
 import { HERO_ABOUT } from "../../common/textConstants";
-import { ReactComponent as EmailIcon } from "./emailIcon.svg";
+import { ReactComponent as EnvelopeIcon } from "./envelopeIcon.svg";
 import heroImageUrl from "./heroImage.png";
 import { Data, Description, HeroWrapper, Image, Name } from "./styled";
 
@@ -14,7 +14,7 @@ const Hero = ({ name, heading }) => (
       <Name>{name}</Name>
       <Description>{HERO_ABOUT}</Description>
       <ButtonLink hireMe href={`mailto:${email}`}>
-        <EmailIcon />
+        <EnvelopeIcon />
         Hire Me
       </ButtonLink>
     </Data>
