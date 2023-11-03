@@ -16,7 +16,7 @@ export const socials = [
   },
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/krystian-żybura-062929288/",
+    url: "https://www.linkedin.com/in/krystian-zybura/",
     Icon: styleIcon(LinkedIn),
   },
 ];
