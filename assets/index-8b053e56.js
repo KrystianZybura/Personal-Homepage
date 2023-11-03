@@ -202,7 +202,7 @@ looking for new job opportunities, learning new skills in the meantime.`,_m="I'm
   @media (max-width: ${({theme:t})=>t.breakpoints.mobile}px) {
     width: 32px;
   }
-`,Om=[{name:"Github",url:"https://github.com/KrystianZybura",Icon:El(Rm)},{name:"Facebook",url:"https://www.facebook.com/168299279807k",Icon:El(Pm)},{name:"LinkedIn",url:"https://www.linkedin.com/in/krystian-żybura-062929288/",Icon:El(Tm)}],$m=()=>_.jsx(Nm,{children:Om.map(({name:e,url:t,Icon:n})=>_.jsx(hi,{href:t,children:_.jsx(n,{})},e))}),zm=L.footer`
+`,Om=[{name:"Github",url:"https://github.com/KrystianZybura",Icon:El(Rm)},{name:"Facebook",url:"https://www.facebook.com/168299279807k",Icon:El(Pm)},{name:"LinkedIn",url:"https://www.linkedin.com/in/krystian-zybura/",Icon:El(Tm)}],$m=()=>_.jsx(Nm,{children:Om.map(({name:e,url:t,Icon:n})=>_.jsx(hi,{href:t,children:_.jsx(n,{})},e))}),zm=L.footer`
   max-width: 633px;
   display: flex;
   flex-flow: column wrap;
