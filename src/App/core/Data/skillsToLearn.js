@@ -1,8 +1,8 @@
 export const skillsToLearn = [
-  "React Context",
   "TypeScript",
   "Node.js",
   "Next.js",
-  "TanStack Query",
+  "Bootstrap",
+  "SCSS",
   "JS classes",
 ];
