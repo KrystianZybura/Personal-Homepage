@@ -1,12 +1,19 @@
+import { useQuery } from "react-query";
+
 import { Title } from "../../common/Title";
 import Error from "./Error";
 import Loading from "./Loading";
 import Tile from "./Tile";
+import { fetchReposData } from "./fetchReposData";
 import { GithubIcon, Heading, Projects, Subtitle } from "./styled";
-import { useReposData } from "./useReposData";
 
 const Portfolio = ({ title, subtitle }) => {
-  const { status, repos } = useReposData();
+  const {
+    isLoading,
+    isError,
+    isSuccess,
+    data: repos,
+  } = useQuery("repos", fetchReposData);
 
   return (
     <>
@@ -16,9 +23,9 @@ const Portfolio = ({ title, subtitle }) => {
         <Subtitle>{subtitle}</Subtitle>
       </Heading>
       <Projects $status={status}>
-        {status === "loading" && <Loading />}
-        {status === "error" && <Error />}
-        {status === "success" && <Tile repos={repos} />}
+        {isLoading && <Loading />}
+        {isError && <Error />}
+        {isSuccess && <Tile repos={repos} />}
       </Projects>
     </>
   );
