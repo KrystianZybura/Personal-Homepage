@@ -41,8 +41,8 @@ export const Projects = styled.div`
   grid-gap: 32px;
   margin-top: -30px;
 
-  ${({ $status }) =>
-    ($status === "loading" || $status === "error") &&
+  ${({ $isLoading, $isError }) =>
+    ($isLoading || $isError) &&
     css`
       grid-template-columns: 1fr;
       place-items: center;

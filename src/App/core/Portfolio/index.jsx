@@ -22,7 +22,7 @@ const Portfolio = ({ title, subtitle }) => {
         <Title>{title}</Title>
         <Subtitle>{subtitle}</Subtitle>
       </Heading>
-      <Projects $status={status}>
+      <Projects $isLoading={isLoading} $isError={isError}>
         {isLoading && <Loading />}
         {isError && <Error />}
         {isSuccess && <Tile repos={repos} />}
