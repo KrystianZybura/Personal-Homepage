@@ -6,7 +6,14 @@ import { ReactQueryDevtools } from "react-query/devtools";
 import App from "./App";
 import ThemeStatus from "./ThemeStatus";
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: 1000 * 60, // 1 minute
+      cacheTime: 1000 * 60 * 5, // 5 minutes
+    },
+  },
+});
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
