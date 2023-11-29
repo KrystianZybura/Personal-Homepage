@@ -1,4 +1,4 @@
-const REPOS_API_URL = "https://api.github.com/users/kry stianzybura/repos";
+const REPOS_API_URL = "https://api.github.com/users/krystianzybura/repos";
 
 const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
