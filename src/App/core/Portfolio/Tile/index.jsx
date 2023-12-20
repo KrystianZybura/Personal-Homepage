@@ -13,9 +13,7 @@ const Tile = ({ repos }) =>
     ({ name, description, html_url, homepage }) =>
       homepage && (
         <TileWrapper key={name}>
-          <Title>
-            {name[0].toUpperCase() + name.substring(1).replaceAll("-", " ")}
-          </Title>
+          <Title>{name.replaceAll("-", " ")}</Title>
           <Description>{description}</Description>
           <LinksContainer>
             <LinkTo>Demo:</LinkTo>

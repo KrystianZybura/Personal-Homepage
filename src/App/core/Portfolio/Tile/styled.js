@@ -38,6 +38,7 @@ export const Title = styled.h4`
   font-weight: 700;
   color: ${({ theme }) => theme.styles.primary};
   margin: 0px;
+  text-transform: capitalize;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
     font-size: 22px;
